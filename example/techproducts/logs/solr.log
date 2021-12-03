@@ -1,0 +1,343 @@
+2021-11-17 06:44:16.416 INFO  (main) [   ] o.e.j.u.log Logging initialized @1326ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-11-17 06:44:16.603 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_312-b07
+2021-11-17 06:44:16.614 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/Programming/solr-8.10.1/server/contexts/] at interval 0
+2021-11-17 06:44:17.020 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-11-17 06:44:17.031 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-11-17 06:44:17.031 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-11-17 06:44:17.033 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-11-17 06:44:17.090 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-11-17 06:44:17.094 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-11-17 06:44:17.094 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-11-17 06:44:17.094 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programming\solr-8.10.1
+2021-11-17 06:44:17.095 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-17T06:44:17.095Z
+2021-11-17 06:44:17.108 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\Programming\solr-8.10.1\example\techproducts\solr
+2021-11-17 06:44:17.109 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programming\solr-8.10.1\example\techproducts\solr\solr.xml
+2021-11-17 06:44:17.181 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
+2021-11-17 06:44:17.707 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-11-17 06:44:17.870 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@58bf8650[provider=null,keyStore=null,trustStore=null]
+2021-11-17 06:44:17.870 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@58bf8650[provider=null,keyStore=null,trustStore=null]
+2021-11-17 06:44:17.979 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@72b16078[provider=null,keyStore=null,trustStore=null]
+2021-11-17 06:44:17.979 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@72b16078[provider=null,keyStore=null,trustStore=null]
+2021-11-17 06:44:18.019 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-11-17 06:44:18.146 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-11-17 06:44:18.154 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-11-17 06:44:18.217 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-11-17 06:44:18.217 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-11-17 06:44:18.218 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-11-17 06:44:18.247 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath D:\Programming\solr-8.10.1\example\techproducts\solr
+2021-11-17 06:44:18.511 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@663c9e7a{/solr,file:///D:/Programming/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}
+2021-11-17 06:44:18.522 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@1b1426f4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-17 06:44:18.522 INFO  (main) [   ] o.e.j.s.Server Started @3435ms
+2021-11-17 06:44:18.979 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=47
+2021-11-17 06:44:19.039 INFO  (qtp461160828-19) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2021-11-17 06:44:19.073 INFO  (qtp461160828-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=25
+2021-11-17 06:44:19.106 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=25
+2021-11-17 06:44:19.111 INFO  (qtp461160828-23) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2021-11-17 06:44:19.455 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.h.a.CoreAdminOperation core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+2021-11-17 06:44:19.580 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/D:/Programming/solr-8.10.1/contrib/extraction/lib, /D:/Programming/solr-8.10.1/contrib/langid/lib, /D:/Programming/solr-8.10.1/contrib/velocity/lib, /D:/Programming/solr-8.10.1/dist]
+2021-11-17 06:44:23.071 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-17 06:44:23.076 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-11-17 06:44:23.096 WARN  (qtp461160828-24) [   x:techproducts] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-17 06:44:23.148 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.s.IndexSchema Schema name=example
+2021-11-17 06:44:23.493 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=24
+2021-11-17 06:44:23.763 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-11-17 06:44:23.764 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-11-17 06:44:23.764 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:44:23.764 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:44:23.788 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-11-17 06:44:23.789 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:44:23.789 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:44:23.789 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:44:23.789 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:44:23.840 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts, trusted=true
+2021-11-17 06:44:23.850 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-11-17 06:44:23.863 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts], dataDir=[D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\data\]
+2021-11-17 06:44:24.081 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-11-17 06:44:24.472 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-17 06:44:24.472 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-17 06:44:24.494 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-17 06:44:24.494 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-11-17 06:44:24.547 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:44:24.550 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:44:24.550 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2021-11-17 06:44:24.556 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:44:24.556 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2021-11-17 06:44:24.557 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2021-11-17 06:44:24.557 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2021-11-17 06:44:24.563 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:44:24.563 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2021-11-17 06:44:24.564 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2021-11-17 06:44:24.565 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2021-11-17 06:44:24.576 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-17 06:44:24.582 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-17 06:44:24.590 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-11-17 06:44:24.607 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-11-17 06:44:24.622 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-11-17 06:44:24.623 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf\elevate.xml
+2021-11-17 06:44:24.637 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-17 06:44:24.642 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1716656762668449792
+2021-11-17 06:44:24.649 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=5194
+2021-11-17 06:44:24.705 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=55
+2021-11-17 06:44:24.705 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-17 06:44:24.705 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-17 06:44:24.705 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-11-17 06:44:24.714 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  Registered new searcher autowarm time: 0 ms
+2021-11-17 06:44:24.943 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1716656762892845056)]} 0 229
+2021-11-17 06:44:25.015 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1716656762995605504), 6H500F0 (1716656763056422912)]} 0 61
+2021-11-17 06:44:25.024 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1716656763064811520), IW-02 (1716656763066908672)]} 0 4
+2021-11-17 06:44:25.035 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1716656763073200128)]} 0 7
+2021-11-17 06:44:25.047 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[adata (1716656763085783040), apple (1716656763086831616), asus (1716656763086831617), ati (1716656763087880192), belkin (1716656763088928768), canon (1716656763088928769), corsair (1716656763089977344), dell (1716656763089977345), maxtor (1716656763091025920), samsung (1716656763092074496), ... (11 adds)]} 0 7
+2021-11-17 06:44:25.058 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1716656763098365952), VS1GB400C3 (1716656763102560256), VDBDB1A16 (1716656763103608832)]} 0 7
+2021-11-17 06:44:25.066 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[USD (1716656763109900288), EUR (1716656763110948864), GBP (1716656763111997440), NOK (1716656763111997441)]} 0 3
+2021-11-17 06:44:25.072 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1716656763118288896)]} 0 1
+2021-11-17 06:44:25.079 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1716656763121434624)]} 0 4
+2021-11-17 06:44:25.084 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1716656763130871808)]} 0 1
+2021-11-17 06:44:25.089 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1716656763136114688)]} 0 1
+2021-11-17 06:44:25.119 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1716656763163377664)]} 0 27
+2021-11-17 06:44:25.157 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1716656763192737792)]} 0 30
+2021-11-17 06:44:25.218 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1716656763220000768), 100-435805 (1716656763265089536)]} 0 51
+2021-11-17 06:44:26.500 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-17 06:44:26.506 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  Registered new searcher autowarm time: 3 ms
+2021-11-17 06:44:26.512 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 1285
+2021-11-17 06:45:06.817 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:06.878 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=59
+2021-11-17 06:45:06.878 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=56
+2021-11-17 06:45:09.022 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:09.030 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1637131509014} status=0 QTime=7
+2021-11-17 06:45:09.032 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1637131506702&ts=1637131506702} status=503 QTime=1
+2021-11-17 06:45:09.033 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/replication params={wt=json&command=details&_=1637131509014} status=0 QTime=5
+2021-11-17 06:45:09.082 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/system params={wt=json&_=1637131509014} status=0 QTime=53
+2021-11-17 06:45:09.083 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=61
+2021-11-17 06:45:12.044 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:12.051 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=4
+2021-11-17 06:45:12.077 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=31
+2021-11-17 06:45:14.769 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:14.785 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1637131514761} status=0 QTime=15
+2021-11-17 06:45:14.798 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=28
+2021-11-17 06:45:15.453 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:15.477 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=24
+2021-11-17 06:45:16.758 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637131515427} hits=32 status=0 QTime=5
+2021-11-17 06:45:16.824 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:16.828 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637131515427} hits=32 status=0 QTime=2
+2021-11-17 06:45:16.848 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=23
+2021-11-17 06:45:25.322 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=samsung&indent=true&q.op=OR&_=1637131515427} hits=1 status=0 QTime=9
+2021-11-17 06:45:25.371 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:25.373 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=samsung&indent=true&q.op=OR&_=1637131515427} hits=1 status=0 QTime=0
+2021-11-17 06:45:25.398 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=27
+2021-11-17 06:45:44.611 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:44.613 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:45:44.637 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=25
+2021-11-17 06:45:44.643 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:44.649 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:45:44.673 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=28
+2021-11-17 06:45:46.674 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:46.700 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=24
+2021-11-17 06:45:49.142 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:49.151 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=1
+2021-11-17 06:45:49.155 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131549124} status=0 QTime=4
+2021-11-17 06:45:49.178 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=34
+2021-11-17 06:45:49.202 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131509014} status=0 QTime=4
+2021-11-17 06:45:56.687 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:45:56.691 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131549124} status=0 QTime=0
+2021-11-17 06:45:56.692 INFO  (qtp461160828-17) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=1
+2021-11-17 06:45:56.715 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=27
+2021-11-17 06:45:56.732 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131509014} status=0 QTime=4
+2021-11-17 06:48:09.464 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:48:09.468 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=1
+2021-11-17 06:48:09.494 INFO  (qtp461160828-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=28
+2021-11-17 06:48:14.188 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commitWithin=1000&overwrite=true&wt=json&_=1637131509014}{deleteByQuery=*:* (-1716657003347050496)} 0 21
+2021-11-17 06:48:15.195 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-17 06:48:15.209 INFO  (searcherExecutor-15-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  Registered new searcher autowarm time: 0 ms
+2021-11-17 06:48:19.412 INFO  (qtp461160828-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:48:19.418 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:48:19.445 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=32
+2021-11-17 06:48:19.447 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:48:19.448 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:48:19.471 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=24
+2021-11-17 06:50:03.151 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:50:03.153 INFO  (qtp461160828-20) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=1
+2021-11-17 06:50:03.182 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=30
+2021-11-17 06:50:03.820 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:50:03.828 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/replication params={wt=json&command=details&_=1637131509014} status=0 QTime=1
+2021-11-17 06:50:03.828 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1637131509014} status=0 QTime=2
+2021-11-17 06:50:03.832 INFO  (qtp461160828-20) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1637131506702&ts=1637131506702} status=503 QTime=0
+2021-11-17 06:50:03.876 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/system params={wt=json&_=1637131509014} status=0 QTime=44
+2021-11-17 06:50:03.876 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=55
+2021-11-17 06:50:04.390 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:50:04.392 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:50:04.423 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=32
+2021-11-17 06:50:04.428 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:50:04.430 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131514761} status=0 QTime=0
+2021-11-17 06:50:04.451 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=22
+2021-11-17 06:50:04.799 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:50:04.803 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131509014} status=0 QTime=1
+2021-11-17 06:50:04.823 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=21
+2021-11-17 06:50:27.054 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+2021-11-17 06:50:27.074 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts tag=null
+2021-11-17 06:50:27.075 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2c39e7eb: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts/com.codahale.metrics.MetricRegistry@70bf579d
+2021-11-17 06:50:27.082 INFO  (qtp461160828-25) [   ] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@3858ade0
+2021-11-17 06:50:27.082 INFO  (qtp461160828-25) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts tag=SolrCore@3858ade0
+2021-11-17 06:50:27.083 INFO  (qtp461160828-25) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-17 06:50:27.105 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={deleteInstanceDir=true&core=techproducts&deleteDataDir=true&action=UNLOAD&wt=json&deleteIndex=true} status=0 QTime=31
+2021-11-17 06:52:02.726 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131506701} status=0 QTime=0
+2021-11-17 06:52:02.754 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131506702} status=0 QTime=27
+2021-11-17 06:52:08.942 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+2021-11-17 06:52:08.966 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2021-11-17 06:52:08.990 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=16
+2021-11-17 06:52:09.011 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=17
+2021-11-17 06:52:09.015 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=techproducts&action=STATUS&wt=json} status=0 QTime=0
+2021-11-17 06:52:09.364 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.h.a.CoreAdminOperation core create command name=techproducts&action=CREATE&instanceDir=techproducts&wt=json
+2021-11-17 06:52:09.378 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.SolrResourceLoader Added 57 libs to classloader, from paths: [/D:/Programming/solr-8.10.1/contrib/extraction/lib, /D:/Programming/solr-8.10.1/contrib/langid/lib, /D:/Programming/solr-8.10.1/contrib/velocity/lib, /D:/Programming/solr-8.10.1/dist]
+2021-11-17 06:52:09.403 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-17 06:52:09.403 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-11-17 06:52:09.403 WARN  (qtp461160828-25) [   x:techproducts] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-17 06:52:09.477 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.IndexSchema Schema name=example
+2021-11-17 06:52:09.554 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedWordSetResource for path /schema/analysis/stopwords/english
+2021-11-17 06:52:09.554 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Registered ManagedResource impl org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory$SynonymManager for path /schema/analysis/synonyms/english
+2021-11-17 06:52:09.554 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:52:09.554 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:52:09.582 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.IndexSchema Loaded schema example/1.6 with uniqueid field id
+2021-11-17 06:52:09.582 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:52:09.582 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:52:09.582 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedStopFilterFactory to existing ManagedResource /schema/analysis/stopwords/english
+2021-11-17 06:52:09.582 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.RestManager Added observer of type org.apache.solr.rest.schema.analysis.ManagedSynonymGraphFilterFactory to existing ManagedResource /schema/analysis/synonyms/english
+2021-11-17 06:52:09.607 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.CoreContainer Creating SolrCore 'techproducts' using configuration from instancedir D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts, trusted=true
+2021-11-17 06:52:09.608 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.techproducts' (registry 'solr.core.techproducts') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-11-17 06:52:09.608 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.SolrCore [[techproducts] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts], dataDir=[D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\data\]
+2021-11-17 06:52:09.732 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-11-17 06:52:09.788 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-17 06:52:09.788 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-17 06:52:09.790 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-17 06:52:09.790 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-11-17 06:52:09.797 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:52:09.798 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _rest_managed.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:52:09.798 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {} for /rest/managed
+2021-11-17 06:52:09.799 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_stopwords_english.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:52:09.799 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true} for /schema/analysis/stopwords/english
+2021-11-17 06:52:09.799 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.s.a.ManagedWordSetResource Loaded 35 words for /schema/analysis/stopwords/english
+2021-11-17 06:52:09.799 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/stopwords/english
+2021-11-17 06:52:09.800 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResourceStorage Loaded LinkedHashMap at path _schema_analysis_synonyms_english.json using file:dir=D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf
+2021-11-17 06:52:09.800 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResource Loaded initArgs {ignoreCase=true,format=solr} for /schema/analysis/synonyms/english
+2021-11-17 06:52:09.800 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.s.a.ManagedSynonymGraphFilterFactory Loaded 3 synonym mappings for /schema/analysis/synonyms/english
+2021-11-17 06:52:09.800 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.r.ManagedResource Notified 2 observers of /schema/analysis/synonyms/english
+2021-11-17 06:52:09.800 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-17 06:52:09.801 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-17 06:52:09.801 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-11-17 06:52:09.801 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-11-17 06:52:09.801 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string,buildOnStartup=false}
+2021-11-17 06:52:09.801 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: D:\Programming\solr-8.10.1\example\techproducts\solr\techproducts\conf\elevate.xml
+2021-11-17 06:52:09.804 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-17 06:52:09.805 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1716657250427207680
+2021-11-17 06:52:09.806 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=techproducts&action=CREATE&instanceDir=techproducts&wt=json} status=0 QTime=441
+2021-11-17 06:52:09.807 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=0
+2021-11-17 06:52:09.807 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-17 06:52:09.807 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-17 06:52:09.807 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-11-17 06:52:09.809 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  Registered new searcher autowarm time: 0 ms
+2021-11-17 06:52:09.849 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[GB18030TEST (1716657250469150720)]} 0 25
+2021-11-17 06:52:09.859 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SP2514N (1716657250479636480), 6H500F0 (1716657250481733632)]} 0 5
+2021-11-17 06:52:09.866 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[F8V7067-APL-KIT (1716657250488025088), IW-02 (1716657250490122240)]} 0 3
+2021-11-17 06:52:09.872 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[MA147LL/A (1716657250494316544)]} 0 3
+2021-11-17 06:52:09.880 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[adata (1716657250500608000), apple (1716657250500608001), asus (1716657250501656576), ati (1716657250502705152), belkin (1716657250502705153), canon (1716657250503753728), corsair (1716657250503753729), dell (1716657250503753730), maxtor (1716657250504802304), samsung (1716657250504802305), ... (11 adds)]} 0 5
+2021-11-17 06:52:09.889 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[TWINX2048-3200PRO (1716657250511093760), VS1GB400C3 (1716657250513190912), VDBDB1A16 (1716657250514239488)]} 0 4
+2021-11-17 06:52:09.894 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[USD (1716657250518433792), EUR (1716657250518433793), GBP (1716657250519482368), NOK (1716657250519482369)]} 0 2
+2021-11-17 06:52:09.898 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[3007WFP (1716657250524725248)]} 0 1
+2021-11-17 06:52:09.903 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[VA902B (1716657250528919552)]} 0 1
+2021-11-17 06:52:09.908 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[0579B002 (1716657250534162432)]} 0 1
+2021-11-17 06:52:09.912 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[9885A004 (1716657250538356736)]} 0 2
+2021-11-17 06:52:09.917 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[SOLR1000 (1716657250543599616)]} 0 1
+2021-11-17 06:52:09.942 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[UTF8TEST (1716657250569814016)]} 0 20
+2021-11-17 06:52:09.947 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={}{add=[EN7800GTX/2DHTV/256M (1716657250574008320), 100-435805 (1716657250575056896)]} 0 2
+2021-11-17 06:52:11.349 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-17 06:52:11.351 INFO  (searcherExecutor-21-thread-1-processing-x:techproducts) [   x:techproducts] o.a.s.c.SolrCore [techproducts]  Registered new searcher autowarm time: 0 ms
+2021-11-17 06:52:11.351 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.u.p.LogUpdateProcessorFactory [techproducts]  webapp=/solr path=/update params={commit=true}{commit=} 0 1402
+2021-11-17 06:52:14.156 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:14.179 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=21
+2021-11-17 06:52:47.240 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:47.245 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:52:47.245 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:52:47.266 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=26
+2021-11-17 06:52:47.281 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:52:51.196 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:51.197 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131971188} status=0 QTime=0
+2021-11-17 06:52:51.224 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=27
+2021-11-17 06:52:51.233 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:51.235 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1637131971188} status=0 QTime=0
+2021-11-17 06:52:51.256 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=23
+2021-11-17 06:52:52.557 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:52.561 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:52:52.582 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=24
+2021-11-17 06:52:53.470 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:53.494 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=23
+2021-11-17 06:52:56.126 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637131934129} hits=32 status=0 QTime=0
+2021-11-17 06:52:56.179 INFO  (qtp461160828-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:52:56.180 INFO  (qtp461160828-22) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1637131934129} hits=32 status=0 QTime=0
+2021-11-17 06:52:56.202 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=22
+2021-11-17 06:53:01.430 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=samsung&indent=true&q.op=OR&_=1637131934129} hits=1 status=0 QTime=1
+2021-11-17 06:53:01.471 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:53:01.472 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/select params={q=samsung&indent=true&q.op=OR&_=1637131934129} hits=1 status=0 QTime=0
+2021-11-17 06:53:01.494 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=22
+2021-11-17 06:53:27.843 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:53:27.849 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:53:27.851 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:53:27.872 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=27
+2021-11-17 06:53:27.891 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:53:36.135 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:53:36.138 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:53:36.139 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:53:36.159 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=23
+2021-11-17 06:53:36.167 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:54:07.732 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:54:07.733 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=0
+2021-11-17 06:54:07.734 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:54:07.756 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=24
+2021-11-17 06:54:07.761 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:54:09.430 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:54:09.432 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:54:09.434 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:54:09.458 INFO  (qtp461160828-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=26
+2021-11-17 06:54:09.463 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:54:14.106 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:54:14.110 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:54:14.110 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:54:14.137 INFO  (qtp461160828-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=29
+2021-11-17 06:54:14.140 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:54:20.788 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:54:20.790 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=0
+2021-11-17 06:54:20.790 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:54:20.818 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=29
+2021-11-17 06:54:20.820 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 06:57:45.449 INFO  (qtp461160828-44) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:57:45.453 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:57:45.453 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:57:45.476 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=26
+2021-11-17 06:57:45.494 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:58:38.991 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 06:58:38.994 INFO  (qtp461160828-41) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 06:58:38.995 INFO  (qtp461160828-44) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 06:58:39.017 INFO  (qtp461160828-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=26
+2021-11-17 06:58:39.024 INFO  (qtp461160828-25) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 07:07:30.094 INFO  (qtp461160828-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 07:07:30.096 INFO  (qtp461160828-18) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 07:07:30.097 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 07:07:30.121 INFO  (qtp461160828-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=24
+2021-11-17 07:07:30.136 INFO  (qtp461160828-55) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=2
+2021-11-17 07:07:32.498 INFO  (qtp461160828-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1637131934043} status=0 QTime=0
+2021-11-17 07:07:32.499 INFO  (qtp461160828-24) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1637131967215} status=0 QTime=0
+2021-11-17 07:07:32.501 INFO  (qtp461160828-55) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/config params={wt=json&_=1637131967216} status=0 QTime=0
+2021-11-17 07:07:32.523 INFO  (qtp461160828-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1637131934044} status=0 QTime=25
+2021-11-17 07:07:32.528 INFO  (qtp461160828-42) [   x:techproducts] o.a.s.c.S.Request [techproducts]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1637131967215} status=0 QTime=1
+2021-11-17 07:46:42.464 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@1b1426f4{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-17 07:46:42.464 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-11-17 07:46:42.467 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1634723627
+2021-11-17 07:46:42.471 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.c.SolrCore [techproducts]  CLOSING SolrCore org.apache.solr.core.SolrCore@62d2b702
+2021-11-17 07:46:42.472 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.techproducts tag=SolrCore@62d2b702
+2021-11-17 07:46:42.472 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2256a880: rootName = null, domain = solr.core.techproducts, service url = null, agent id = null] for registry solr.core.techproducts/com.codahale.metrics.MetricRegistry@2c275336
+2021-11-17 07:46:42.487 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-17 07:46:42.497 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-11-17 07:46:42.497 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1d81e101: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@166b5b4e
+2021-11-17 07:46:42.500 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-11-17 07:46:42.500 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@100f9bbe: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@4b047f
+2021-11-17 07:46:42.501 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-11-17 07:46:42.502 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@13e9f2e2: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@1a18c5d4
+2021-11-17 07:46:42.565 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@663c9e7a{/solr,null,STOPPED}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}

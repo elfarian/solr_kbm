@@ -1,0 +1,161 @@
+2021-10-29 07:43:30.405 INFO  (main) [   ] o.e.j.u.log Logging initialized @1558ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-10-29 07:43:30.674 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_311-b11
+2021-10-29 07:43:30.686 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/Programming/solr-8.10.1/server/contexts/] at interval 0
+2021-10-29 07:43:31.149 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-10-29 07:43:31.159 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-10-29 07:43:31.159 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-10-29 07:43:31.161 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-10-29 07:43:31.222 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-10-29 07:43:31.226 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-10-29 07:43:31.226 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 7574
+2021-10-29 07:43:31.226 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programming\solr-8.10.1
+2021-10-29 07:43:31.227 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-10-29T07:43:31.226Z
+2021-10-29 07:43:31.235 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\Programming\solr-8.10.1\example\cloud\node2\solr
+2021-10-29 07:43:31.286 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-10-29 07:43:31.491 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-10-29 07:43:31.491 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-10-29 07:43:31.859 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-10-29 07:43:31.860 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programming\solr-8.10.1\example\cloud\node2\solr\solr.xml
+2021-10-29 07:43:31.991 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701, but no JMX reporters were configured - adding default JMX reporter.
+2021-10-29 07:43:32.657 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-10-29 07:43:33.123 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@4fbdc0f0[provider=null,keyStore=null,trustStore=null]
+2021-10-29 07:43:33.123 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@4fbdc0f0[provider=null,keyStore=null,trustStore=null]
+2021-10-29 07:43:33.230 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2899a8db[provider=null,keyStore=null,trustStore=null]
+2021-10-29 07:43:33.230 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2899a8db[provider=null,keyStore=null,trustStore=null]
+2021-10-29 07:43:33.266 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-10-29 07:43:33.282 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-10-29 07:43:33.411 INFO  (zkConnectionManagerCallback-13-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-10-29 07:43:33.411 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-10-29 07:43:33.485 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-10-29 07:43:33.497 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-10-29 07:43:33.661 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.10.218:7574_solr as DOWN
+2021-10-29 07:43:33.795 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-10-29 07:43:33.834 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.10.218:7574_solr
+2021-10-29 07:43:34.064 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-10-29 07:43:34.119 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-10-29 07:43:34.134 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-10-29 07:43:34.306 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-10-29 07:43:34.381 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-10-29 07:43:34.382 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-10-29 07:43:34.383 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-10-29 07:43:34.434 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 0 core definitions underneath D:\Programming\solr-8.10.1\example\cloud\node2\solr
+2021-10-29 07:43:35.141 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@54422e18{/solr,file:///D:/Programming/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}
+2021-10-29 07:43:35.152 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@2b48a640{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:7574}
+2021-10-29 07:43:35.152 INFO  (main) [   ] o.e.j.s.Server Started @6309ms
+2021-10-29 07:43:37.886 INFO  (qtp1130894323-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=62
+2021-10-29 07:43:37.946 INFO  (qtp1130894323-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=5
+2021-10-29 07:43:38.375 INFO  (qtp1130894323-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=33
+2021-10-29 07:43:38.381 INFO  (qtp1130894323-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=1
+2021-10-29 07:43:45.492 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (3)
+2021-10-29 07:43:56.525 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (3) -> (4)
+2021-10-29 07:45:08.990 INFO  (qtp1130894323-26) [   x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node5&collection.configName=KnowledgeManagement&newCollection=true&name=KnowledgeManagement_shard1_replica_n2&action=CREATE&numShards=2&collection=KnowledgeManagement&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2021-10-29 07:45:09.553 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-10-29 07:45:09.866 WARN  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-10-29 07:45:10.023 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=default-config
+2021-10-29 07:45:11.256 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-10-29 07:45:11.614 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'KnowledgeManagement_shard1_replica_n2' using configuration from configset KnowledgeManagement, trusted=true
+2021-10-29 07:45:11.662 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.KnowledgeManagement.shard1.replica_n2' (registry 'solr.core.KnowledgeManagement.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-10-29 07:45:11.724 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SolrCore [[KnowledgeManagement_shard1_replica_n2] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\KnowledgeManagement_shard1_replica_n2], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\KnowledgeManagement_shard1_replica_n2\data\]
+2021-10-29 07:45:14.191 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-10-29 07:45:14.191 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-10-29 07:45:14.200 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-10-29 07:45:14.200 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-10-29 07:45:14.667 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/KnowledgeManagement
+2021-10-29 07:45:14.673 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/KnowledgeManagement
+2021-10-29 07:45:14.676 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/KnowledgeManagement/managed-schema
+2021-10-29 07:45:14.677 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-10-29 07:45:14.723 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-10-29 07:45:14.788 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-10-29 07:45:14.810 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-10-29 07:45:14.823 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1714939247799042048
+2021-10-29 07:45:14.833 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.218:7574_solr x:KnowledgeManagement_shard1_replica_n2 c:KnowledgeManagement s:shard1 r:core_node5) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-10-29 07:45:14.834 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.218:7574_solr x:KnowledgeManagement_shard1_replica_n2 c:KnowledgeManagement s:shard1 r:core_node5) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-10-29 07:45:14.853 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.218:7574_solr x:KnowledgeManagement_shard1_replica_n2 c:KnowledgeManagement s:shard1 r:core_node5) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SolrCore [KnowledgeManagement_shard1_replica_n2]  Registered new searcher autowarm time: 0 ms
+2021-10-29 07:45:15.867 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ZkShardTerms Successful update of terms at /collections/KnowledgeManagement/terms/shard1 to Terms{values={core_node5=0}, version=0}
+2021-10-29 07:45:15.886 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/KnowledgeManagement/leaders/shard1
+2021-10-29 07:45:17.950 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-10-29 07:45:17.951 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-10-29 07:45:17.951 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SyncStrategy Sync replicas to http://192.168.10.218:7574/solr/KnowledgeManagement_shard1_replica_n2/
+2021-10-29 07:45:18.055 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.PeerSync PeerSync: core=KnowledgeManagement_shard1_replica_n2 url=http://192.168.10.218:7574/solr  START replicas=[http://192.168.10.218:7575/solr/KnowledgeManagement_shard1_replica_n1/] nUpdates=100
+2021-10-29 07:45:18.058 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.u.PeerSync PeerSync: core=KnowledgeManagement_shard1_replica_n2 url=http://192.168.10.218:7574/solr  DONE. We have no versions. sync failed.
+2021-10-29 07:45:18.149 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-10-29 07:45:18.149 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-10-29 07:45:18.150 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/KnowledgeManagement/leaders/shard1/leader after winning as /collections/KnowledgeManagement/leader_elect/shard1/election/72059417583353858-core_node5-n_0000000000
+2021-10-29 07:45:18.631 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.10.218:7574/solr/KnowledgeManagement_shard1_replica_n2/ shard1
+2021-10-29 07:45:18.833 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [4])
+2021-10-29 07:45:18.928 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-10-29 07:45:19.290 INFO  (qtp1130894323-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node5&collection.configName=KnowledgeManagement&newCollection=true&name=KnowledgeManagement_shard1_replica_n2&action=CREATE&numShards=2&collection=KnowledgeManagement&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=10300
+2021-10-29 07:45:19.582 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [4])
+2021-10-29 07:45:19.582 INFO  (zkCallback-12-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [4])
+2021-10-29 07:45:20.057 INFO  (zkCallback-12-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [4])
+2021-10-29 07:45:20.057 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [4])
+2021-10-29 07:45:21.214 INFO  (Thread-13) [   ] o.a.s.c.SolrCore config update listener called for core KnowledgeManagement_shard1_replica_n2
+2021-10-29 07:45:21.218 INFO  (Thread-13) [   ] o.a.s.c.SolrCore core reload KnowledgeManagement_shard1_replica_n2
+2021-10-29 07:45:21.322 INFO  (Thread-13) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-10-29 07:45:21.323 WARN  (Thread-13) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-10-29 07:45:21.338 INFO  (Thread-13) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-10-29 07:45:21.380 INFO  (qtp1130894323-17) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:21.381 INFO  (qtp1130894323-17) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=18
+2021-10-29 07:45:21.409 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:21.513 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:21.514 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:45:21.521 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:21.624 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:21.625 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:45:21.626 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:21.638 INFO  (Thread-13) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-10-29 07:45:21.729 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:21.730 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:45:21.730 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:21.759 INFO  (Thread-13) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'KnowledgeManagement_shard1_replica_n2' using configuration from configset KnowledgeManagement
+2021-10-29 07:45:21.829 INFO  (Thread-13) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.KnowledgeManagement.shard1.replica_n2' (registry 'solr.core.KnowledgeManagement.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@1a04f701
+2021-10-29 07:45:21.829 INFO  (Thread-13) [   ] o.a.s.c.SolrCore [[KnowledgeManagement_shard1_replica_n2] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\KnowledgeManagement_shard1_replica_n2], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\KnowledgeManagement_shard1_replica_n2\data\]
+2021-10-29 07:45:21.846 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:21.847 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:45:21.858 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:21.976 INFO  (Thread-13) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-10-29 07:45:21.976 INFO  (Thread-13) [   ] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-10-29 07:45:22.008 INFO  (Thread-13) [   ] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/KnowledgeManagement
+2021-10-29 07:45:22.009 INFO  (Thread-13) [   ] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/KnowledgeManagement
+2021-10-29 07:45:22.010 INFO  (Thread-13) [   ] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/KnowledgeManagement/managed-schema
+2021-10-29 07:45:22.011 INFO  (Thread-13) [   ] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-10-29 07:45:22.011 INFO  (Thread-13) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-10-29 07:45:22.012 INFO  (Thread-13) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-10-29 07:45:22.012 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-10-29 07:45:22.012 INFO  (qtp1130894323-26) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:45:22.013 INFO  (Thread-13) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-10-29 07:45:22.017 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-10-29 07:45:22.017 INFO  (Thread-13) [   ] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1714939255342497792
+2021-10-29 07:45:22.022 INFO  (searcherExecutor-29-thread-1-processing-n:192.168.10.218:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-10-29 07:45:22.022 INFO  (searcherExecutor-29-thread-1-processing-n:192.168.10.218:7574_solr) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-10-29 07:45:22.030 INFO  (Thread-13) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-10-29 07:45:22.037 INFO  (searcherExecutor-29-thread-1-processing-n:192.168.10.218:7574_solr) [   ] o.a.s.c.SolrCore [KnowledgeManagement_shard1_replica_n2]  Registered new searcher autowarm time: 0 ms
+2021-10-29 07:45:22.040 INFO  (Thread-13) [   ] o.a.s.c.SolrCore [KnowledgeManagement_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@627c3741
+2021-10-29 07:45:22.040 INFO  (Thread-13) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.KnowledgeManagement.shard1.replica_n2 tag=SolrCore@627c3741
+2021-10-29 07:45:22.040 INFO  (Thread-13) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1047939c: rootName = null, domain = solr.core.KnowledgeManagement.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.KnowledgeManagement.shard1.replica_n2/com.codahale.metrics.MetricRegistry@690cb47b
+2021-10-29 07:45:22.046 INFO  (Thread-13) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.KnowledgeManagement.shard1.leader tag=SolrCore@627c3741
+2021-10-29 07:45:22.068 INFO  (searcherExecutor-29-thread-1-processing-n:192.168.10.218:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-10-29 07:45:22.071 INFO  (searcherExecutor-29-thread-1-processing-n:192.168.10.218:7574_solr) [   ] o.a.s.c.SolrCore [KnowledgeManagement_shard1_replica_n2]  Registered new searcher autowarm time: 27 ms
+2021-10-29 07:45:22.123 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2021-10-29 07:45:22.123 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2021-10-29 07:45:22.123 INFO  (qtp1130894323-19) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.S.Request [KnowledgeManagement_shard1_replica_n2]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-10-29 07:55:56.176 INFO  (qtp1130894323-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1635493961679} status=0 QTime=44
+2021-10-29 07:59:57.057 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@2b48a640{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:7574}
+2021-10-29 07:59:57.057 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-10-29 07:59:57.057 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=396918327
+2021-10-29 07:59:57.058 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.10.218:7574_solr
+2021-10-29 07:59:57.219 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-10-29 07:59:57.219 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.10.218:7574_solr as DOWN
+2021-10-29 07:59:57.418 INFO  (coreCloseExecutor-35-thread-1) [   ] o.a.s.c.SolrCore [KnowledgeManagement_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@5df1324e
+2021-10-29 07:59:57.418 INFO  (coreCloseExecutor-35-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.KnowledgeManagement.shard1.replica_n2 tag=SolrCore@5df1324e
+2021-10-29 07:59:57.418 INFO  (coreCloseExecutor-35-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@603e77e6: rootName = null, domain = solr.core.KnowledgeManagement.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.KnowledgeManagement.shard1.replica_n2/com.codahale.metrics.MetricRegistry@690cb47b
+2021-10-29 07:59:57.431 INFO  (coreCloseExecutor-35-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.KnowledgeManagement.shard1.leader tag=SolrCore@5df1324e
+2021-10-29 07:59:57.435 INFO  (coreCloseExecutor-35-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-10-29 07:59:57.443 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-10-29 07:59:57.443 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5782d777: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@eaad098
+2021-10-29 07:59:57.445 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-10-29 07:59:57.446 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1fcf9739: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@5d94e474
+2021-10-29 07:59:57.446 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-10-29 07:59:57.446 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5b498842: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@120ede2c
+2021-10-29 07:59:57.447 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-10-29 07:59:58.332 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@54422e18{/solr,null,STOPPED}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}

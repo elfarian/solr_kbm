@@ -1,0 +1,40 @@
+<!-- <dataConfig>
+<dataSource type="JdbcDataSource" 
+          driver="com.mysql.jdbc.Driver"
+          url="jdbc:mysql://10.10.11.34:3306/bcbeats" 
+          user="db_viewer" 
+          password="magang2021"/>
+<document>
+<entity name="car_register" 
+        pk="id"
+        query="select * from car_register">
+   <field column="id" name="id"/>
+   <field column="id_lokasi" name="id_lokasi"/>
+   <field column="id_obyek" name="id_obyek"/>
+   <field column="id_obyek_detil" name="id_obyek_detil"/>
+   <field column="deskripsi" name="deskripsi"/>
+</entity>
+</document>
+</dataConfig> -->
+
+<dataConfig>
+<dataSource type="JdbcDataSource" 
+            driver="com.mysql.jdbc.Driver"
+            url="jdbc:mysql://10.10.11.34:3306/bcbeats" 
+            user="db_viewer" 
+            password="magang2021"/>
+<document>
+  <entity name="car_register"  
+    pk="id"
+    query="SELECT id,id_lokasi,id_obyek,id_obyek_detil,deskripsi FROM car_register"
+    deltaImportQuery="SELECT id,id_lokasi,id_obyek,id_obyek_detil,deskripsi FROM car_register WHERE id='${dih.delta.id}'"
+    deltaQuery="SELECT id FROM car_register  WHERE updated_at > '${dih.last_index_time}'"
+    >
+        <field column="id" name="id"/>
+        <field column="id_lokasi" name="id_lokasi"/>
+        <field column="id_obyek" name="id_obyek"/>
+        <field column="id_obyek_detil" name="id_obyek_detil"/>
+        <field column="deskripsi" name="deskripsi"/>      
+  </entity>
+</document>
+</dataConfig>

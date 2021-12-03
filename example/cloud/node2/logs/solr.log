@@ -1,0 +1,1114 @@
+2021-11-04 07:28:07.186 INFO  (main) [   ] o.e.j.u.log Logging initialized @1726ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-11-04 07:28:07.444 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_311-b11
+2021-11-04 07:28:07.461 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/Programming/solr-8.10.1/server/contexts/] at interval 0
+2021-11-04 07:28:07.970 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-11-04 07:28:07.983 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-11-04 07:28:07.983 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-11-04 07:28:07.986 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-11-04 07:28:08.078 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-11-04 07:28:08.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-11-04 07:28:08.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 7574
+2021-11-04 07:28:08.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programming\solr-8.10.1
+2021-11-04 07:28:08.084 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-04T07:28:08.084Z
+2021-11-04 07:28:08.094 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\Programming\solr-8.10.1\example\cloud\node2\solr
+2021-11-04 07:28:08.175 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-11-04 07:28:08.345 INFO  (zkConnectionManagerCallback-2-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-11-04 07:28:08.346 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-11-04 07:28:08.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Loading solr.xml from SolrHome (not found in ZooKeeper)
+2021-11-04 07:28:08.586 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programming\solr-8.10.1\example\cloud\node2\solr\solr.xml
+2021-11-04 07:28:08.698 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8, but no JMX reporters were configured - adding default JMX reporter.
+2021-11-04 07:28:09.381 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-11-04 07:28:09.808 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@70d2e40b[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:28:09.808 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@70d2e40b[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:28:09.931 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2237bada[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:28:09.931 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2237bada[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:28:09.966 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-11-04 07:28:09.980 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-11-04 07:28:10.153 INFO  (zkConnectionManagerCallback-13-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-11-04 07:28:10.153 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-11-04 07:28:10.202 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-11-04 07:28:10.214 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-11-04 07:28:10.391 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.10.186:7574_solr as DOWN
+2021-11-04 07:28:10.502 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-11-04 07:28:10.518 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.10.186:7574_solr
+2021-11-04 07:28:10.716 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-11-04 07:28:10.756 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-11-04 07:28:10.768 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-11-04 07:28:10.955 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-11-04 07:28:11.042 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:11.043 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:11.044 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:11.130 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\Programming\solr-8.10.1\example\cloud\node2\solr
+2021-11-04 07:28:11.131 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [gettingstarted_shard1_replica_n1, KnowledgeManagement_shard1_replica_n2]
+2021-11-04 07:28:11.256 INFO  (coreLoadExecutor-21-thread-2-processing-n:192.168.10.186:7574_solr) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.c.ZkStateReader /collections/gettingstarted/state.json is deleted, stop watching children
+2021-11-04 07:28:11.256 INFO  (coreLoadExecutor-21-thread-1-processing-n:192.168.10.186:7574_solr) [c:KnowledgeManagement s:shard1 r:core_node5 x:KnowledgeManagement_shard1_replica_n2] o.a.s.c.c.ZkStateReader /collections/KnowledgeManagement/state.json is deleted, stop watching children
+2021-11-04 07:28:12.186 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@58cbafc2{/solr,file:///D:/Programming/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}
+2021-11-04 07:28:12.198 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@3d5c822d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:7574}
+2021-11-04 07:28:12.198 INFO  (main) [   ] o.e.j.s.Server Started @6741ms
+2021-11-04 07:28:14.846 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=94
+2021-11-04 07:28:14.846 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=94
+2021-11-04 07:28:14.914 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=6
+2021-11-04 07:28:14.938 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=3
+2021-11-04 07:28:21.286 ERROR (coreContainerWorkExecutor-4-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node5 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+java.util.concurrent.ExecutionException: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node5 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_311]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:898) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_311]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:1.8.0_311]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+Caused by: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node5 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at org.apache.solr.cloud.ZkController.checkStateInZk(ZkController.java:1945) ~[?:?]
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1842) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1439) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:869) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-11-04 07:28:21.388 ERROR (coreContainerWorkExecutor-4-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup => java.util.concurrent.ExecutionException: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node3 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at java.util.concurrent.FutureTask.report(Unknown Source)
+java.util.concurrent.ExecutionException: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node3 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at java.util.concurrent.FutureTask.report(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.FutureTask.get(Unknown Source) ~[?:1.8.0_311]
+	at org.apache.solr.core.CoreContainer.lambda$load$12(CoreContainer.java:898) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedRunnable.run(InstrumentedExecutorService.java:180) ~[metrics-core-4.1.5.jar:4.1.5]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.FutureTask.run(Unknown Source) ~[?:1.8.0_311]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:218) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:1.8.0_311]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+Caused by: org.apache.solr.cloud.ZkController$NotInClusterStateException: coreNodeName core_node3 does not exist in shard shard1, ignore the exception if the replica was deleted
+	at org.apache.solr.cloud.ZkController.checkStateInZk(ZkController.java:1945) ~[?:?]
+	at org.apache.solr.cloud.ZkController.preRegister(ZkController.java:1842) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1439) ~[?:?]
+	at org.apache.solr.core.CoreContainer.lambda$load$11(CoreContainer.java:869) ~[?:?]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:202) ~[metrics-core-4.1.5.jar:4.1.5]
+	... 5 more
+2021-11-04 07:28:43.935 INFO  (qtp1470344997-17) [   x:gettingstarted_shard2_replica_n4] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node7&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard2_replica_n4&action=CREATE&numShards=2&collection=gettingstarted&shard=shard2&wt=javabin&version=2&replicaType=NRT
+2021-11-04 07:28:43.935 INFO  (qtp1470344997-20) [   x:gettingstarted_shard1_replica_n1] o.a.s.h.a.CoreAdminOperation core create command qt=/admin/cores&coreNodeName=core_node3&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard1_replica_n1&action=CREATE&numShards=2&collection=gettingstarted&shard=shard1&wt=javabin&version=2&replicaType=NRT
+2021-11-04 07:28:44.475 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:28:44.475 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:28:44.511 WARN  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:28:44.511 WARN  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:28:44.806 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:28:44.860 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:28:45.662 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:28:45.662 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:28:45.991 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.CoreContainer Creating SolrCore 'gettingstarted_shard2_replica_n4' using configuration from configset gettingstarted, trusted=true
+2021-11-04 07:28:45.995 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.CoreContainer Creating SolrCore 'gettingstarted_shard1_replica_n1' using configuration from configset gettingstarted, trusted=true
+2021-11-04 07:28:46.014 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard1.replica_n1' (registry 'solr.core.gettingstarted.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:46.014 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard2.replica_n4' (registry 'solr.core.gettingstarted.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:46.041 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrCore [[gettingstarted_shard2_replica_n4] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n4], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n4\data\]
+2021-11-04 07:28:46.041 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrCore [[gettingstarted_shard1_replica_n1] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n1], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n1\data\]
+2021-11-04 07:28:47.437 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-04 07:28:47.437 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-04 07:28:47.437 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-04 07:28:47.437 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-04 07:28:47.473 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:28:47.473 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-11-04 07:28:47.475 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:28:47.475 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-11-04 07:28:47.591 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2021-11-04 07:28:47.591 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2021-11-04 07:28:47.599 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2021-11-04 07:28:47.599 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2021-11-04 07:28:47.603 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2021-11-04 07:28:47.604 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2021-11-04 07:28:47.606 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:28:47.607 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:28:47.633 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:28:47.639 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:28:47.645 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:28:47.653 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:28:47.666 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:28:47.666 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:28:47.676 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481794498789376
+2021-11-04 07:28:47.676 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481794498789376
+2021-11-04 07:28:47.693 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:47.694 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:28:47.694 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:47.694 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:28:47.706 INFO  (searcherExecutor-23-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:28:47.706 INFO  (searcherExecutor-25-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:28:48.233 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard2 to Terms{values={core_node7=0}, version=0}
+2021-11-04 07:28:48.256 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/gettingstarted/leaders/shard2
+2021-11-04 07:28:49.147 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard1 to Terms{values={core_node3=0}, version=0}
+2021-11-04 07:28:49.148 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/gettingstarted/leaders/shard1
+2021-11-04 07:28:50.415 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-11-04 07:28:50.415 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-11-04 07:28:50.416 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SyncStrategy Sync replicas to http://192.168.10.186:7574/solr/gettingstarted_shard2_replica_n4/
+2021-11-04 07:28:50.556 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.PeerSync PeerSync: core=gettingstarted_shard2_replica_n4 url=http://192.168.10.186:7574/solr  START replicas=[http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/] nUpdates=100
+2021-11-04 07:28:50.558 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.PeerSync PeerSync: core=gettingstarted_shard2_replica_n4 url=http://192.168.10.186:7574/solr  DONE. We have no versions. sync failed.
+2021-11-04 07:28:50.769 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext Enough replicas found to continue.
+2021-11-04 07:28:50.769 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-11-04 07:28:50.769 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SyncStrategy Sync replicas to http://192.168.10.186:7574/solr/gettingstarted_shard1_replica_n1/
+2021-11-04 07:28:50.769 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=gettingstarted_shard1_replica_n1 url=http://192.168.10.186:7574/solr  START replicas=[http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/] nUpdates=100
+2021-11-04 07:28:50.770 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.PeerSync PeerSync: core=gettingstarted_shard1_replica_n1 url=http://192.168.10.186:7574/solr  DONE. We have no versions. sync failed.
+2021-11-04 07:28:50.854 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-11-04 07:28:50.854 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SyncStrategy Leader's attempt to sync with shard failed, moving to the next candidate
+2021-11-04 07:28:50.854 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-11-04 07:28:50.854 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext We failed sync, but we have no versions - we can't sync in that case - we were active before, so become leader anyway
+2021-11-04 07:28:50.855 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/gettingstarted/leaders/shard2/leader after winning as /collections/gettingstarted/leader_elect/shard2/election/72057777035673602-core_node7-n_0000000000
+2021-11-04 07:28:50.855 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/gettingstarted/leaders/shard1/leader after winning as /collections/gettingstarted/leader_elect/shard1/election/72057777035673602-core_node3-n_0000000000
+2021-11-04 07:28:51.378 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.10.186:7574/solr/gettingstarted_shard1_replica_n1/ shard1
+2021-11-04 07:28:51.471 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.10.186:7574/solr/gettingstarted_shard2_replica_n4/ shard2
+2021-11-04 07:28:51.673 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2021-11-04 07:28:51.782 INFO  (qtp1470344997-17) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-11-04 07:28:51.784 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-11-04 07:28:52.175 INFO  (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node3&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard1_replica_n1&action=CREATE&numShards=2&collection=gettingstarted&shard=shard1&wt=javabin&version=2&replicaType=NRT} status=0 QTime=8244
+2021-11-04 07:28:52.178 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={qt=/admin/cores&coreNodeName=core_node7&collection.configName=gettingstarted&newCollection=true&name=gettingstarted_shard2_replica_n4&action=CREATE&numShards=2&collection=gettingstarted&shard=shard2&wt=javabin&version=2&replicaType=NRT} status=0 QTime=8247
+2021-11-04 07:28:52.412 INFO  (zkCallback-12-thread-2) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2021-11-04 07:28:52.412 INFO  (zkCallback-12-thread-1) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2021-11-04 07:28:53.186 INFO  (Thread-13) [   ] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard2_replica_n4
+2021-11-04 07:28:53.192 INFO  (Thread-13) [   ] o.a.s.c.SolrCore core reload gettingstarted_shard2_replica_n4
+2021-11-04 07:28:53.234 INFO  (Thread-13) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:28:53.235 WARN  (Thread-13) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:28:53.243 INFO  (Thread-13) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:28:53.343 INFO  (qtp1470344997-22) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.344 INFO  (qtp1470344997-22) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=9
+2021-11-04 07:28:53.346 INFO  (qtp1470344997-23) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.347 INFO  (qtp1470344997-23) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=3
+2021-11-04 07:28:53.352 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Trying to update my configs
+2021-11-04 07:28:53.352 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard1_replica_n1
+2021-11-04 07:28:53.353 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.357 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore core reload gettingstarted_shard1_replica_n1
+2021-11-04 07:28:53.394 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:28:53.395 WARN  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:28:53.399 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:28:53.461 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.461 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.470 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.472 INFO  (qtp1470344997-23) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.472 INFO  (qtp1470344997-23) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.479 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.593 INFO  (Thread-13) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:28:53.651 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.652 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.656 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.659 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.659 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.692 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.725 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:28:53.776 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.776 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.781 INFO  (qtp1470344997-23) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.782 INFO  (qtp1470344997-23) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.801 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.802 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.829 INFO  (Thread-13) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'gettingstarted_shard2_replica_n4' using configuration from configset gettingstarted
+2021-11-04 07:28:53.889 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.889 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.893 INFO  (Thread-13) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard2.replica_n4' (registry 'solr.core.gettingstarted.shard2.replica_n4') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:53.893 INFO  (Thread-13) [   ] o.a.s.c.SolrCore [[gettingstarted_shard2_replica_n4] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n4], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard2_replica_n4\data\]
+2021-11-04 07:28:53.895 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.901 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:53.902 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:53.909 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:53.946 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.CoreContainer Reloading SolrCore 'gettingstarted_shard1_replica_n1' using configuration from configset gettingstarted
+2021-11-04 07:28:54.004 INFO  (SolrConfigHandler-refreshconf) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard1.replica_n1' (registry 'solr.core.gettingstarted.shard1.replica_n1') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:28:54.005 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore [[gettingstarted_shard1_replica_n1] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n1], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node2\solr\gettingstarted_shard1_replica_n1\data\]
+2021-11-04 07:28:54.045 INFO  (Thread-13) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:28:54.045 INFO  (Thread-13) [   ] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-11-04 07:28:54.081 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:54.100 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=18
+2021-11-04 07:28:54.101 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:54.108 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:54.109 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:54.144 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:54.178 INFO  (Thread-13) [   ] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2021-11-04 07:28:54.180 INFO  (Thread-13) [   ] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2021-11-04 07:28:54.180 INFO  (Thread-13) [   ] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2021-11-04 07:28:54.183 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:28:54.183 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-11-04 07:28:54.187 INFO  (Thread-13) [   ] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:28:54.188 INFO  (Thread-13) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:28:54.189 INFO  (Thread-13) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:28:54.191 INFO  (Thread-13) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:28:54.193 INFO  (Thread-13) [   ] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481801332359168
+2021-11-04 07:28:54.203 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:54.203 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:28:54.210 INFO  (Thread-13) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-11-04 07:28:54.213 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:28:54.217 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:54.217 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:54.222 INFO  (Thread-13) [   ] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@b2a30a1
+2021-11-04 07:28:54.222 INFO  (Thread-13) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard2.replica_n4 tag=SolrCore@b2a30a1
+2021-11-04 07:28:54.223 INFO  (Thread-13) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1c5385ab: rootName = null, domain = solr.core.gettingstarted.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.gettingstarted.shard2.replica_n4/com.codahale.metrics.MetricRegistry@3cd19fc0
+2021-11-04 07:28:54.230 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2021-11-04 07:28:54.232 INFO  (Thread-13) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard2.leader tag=SolrCore@b2a30a1
+2021-11-04 07:28:54.249 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2021-11-04 07:28:54.249 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:54.251 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2021-11-04 07:28:54.251 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=4
+2021-11-04 07:28:54.258 INFO  (Thread-13) [   ] o.a.s.c.SolrCore config update listener called for core gettingstarted_shard1_replica_n1
+2021-11-04 07:28:54.261 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:54.267 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 39 ms
+2021-11-04 07:28:54.292 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2021-11-04 07:28:54.292 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2021-11-04 07:28:54.333 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:54.334 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=2
+2021-11-04 07:28:54.338 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:54.397 INFO  (Thread-13) [   ] o.a.s.c.SolrCore core reload gettingstarted_shard1_replica_n1
+2021-11-04 07:28:54.397 INFO  (Thread-13) [   ] o.a.s.c.SolrCore Another reload is in progress. Not doing anything.
+2021-11-04 07:28:54.439 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler expecting overlay version 0 but my version is -1
+2021-11-04 07:28:54.440 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:28:54.442 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.SolrConfigHandler Another reload is in progress . Not doing anything
+2021-11-04 07:28:54.487 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:28:54.487 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:28:54.487 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:28:54.489 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:28:54.490 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481801642737664
+2021-11-04 07:28:54.491 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:54.491 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:28:54.495 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:28:54.496 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-11-04 07:28:54.499 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@48918497
+2021-11-04 07:28:54.499 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard1.replica_n1 tag=SolrCore@48918497
+2021-11-04 07:28:54.499 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:28:54.499 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@bea4bf3: rootName = null, domain = solr.core.gettingstarted.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.gettingstarted.shard1.replica_n1/com.codahale.metrics.MetricRegistry@7a0c0c3b
+2021-11-04 07:28:54.502 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr) [   ] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:28:54.504 INFO  (SolrConfigHandler-refreshconf) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard1.leader tag=SolrCore@48918497
+2021-11-04 07:28:54.544 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler I already have the expected version 0 of config
+2021-11-04 07:28:54.544 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.h.SolrConfigHandler isStale false , resourceloader org.apache.solr.cloud.ZkSolrResourceLoader
+2021-11-04 07:28:54.544 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/config/znodeVersion params={overlay=0&wt=javabin&version=2} status=0 QTime=0
+2021-11-04 07:32:29.271 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=javabin&version=2&_=1636011139254} status=0 QTime=37
+2021-11-04 07:32:49.042 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:49.044 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:49.048 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 1 from Zookeeper
+2021-11-04 07:32:49.053 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 1 from Zookeeper
+2021-11-04 07:32:49.082 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:49.095 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:49.101 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:49.101 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:49.101 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:49.101 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:49.102 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:49.131 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:49.131 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:49.131 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:49.131 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:49.132 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:49.335 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:49.336 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 287 ms
+2021-11-04 07:32:49.336 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:49.337 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 283 ms
+2021-11-04 07:32:50.015 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard2 to Terms{values={core_node7=1, core_node8=1}, version=2}
+2021-11-04 07:32:50.553 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[0553573403 (1715482048146178048), 0553579908 (1715482048450265088), 055357342X (1715482048452362240), 0553293354 (1715482048454459392), 0812550706 (1715482048457605120)]} 0 1005
+2021-11-04 07:32:50.688 INFO  (qtp1470344997-24) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.ZkShardTerms Successful update of terms at /collections/gettingstarted/terms/shard1 to Terms{values={core_node3=1, core_node5=1}, version=2}
+2021-11-04 07:32:50.693 INFO  (qtp1470344997-24) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[0812521390 (1715482048146178048), 0441385532 (1715482048450265088), 0380014300 (1715482048452362240), 0805080481 (1715482048454459392), 080508049X (1715482048456556544)]} 0 1146
+2021-11-04 07:32:50.746 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[978-1423103349 (1715482049350991872), 978-1857995879 (1715482049358331904), 978-1933988177 (1715482049362526208)]} 0 25
+2021-11-04 07:32:50.750 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[978-0641723445 (1715482049350991872)]} 0 31
+2021-11-04 07:32:51.158 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:51.158 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:51.161 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 2 from Zookeeper
+2021-11-04 07:32:51.162 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 2 from Zookeeper
+2021-11-04 07:32:51.182 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:51.191 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:51.191 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:51.191 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:51.191 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:51.191 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:51.206 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:51.223 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:51.223 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:51.223 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:51.223 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:51.224 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:51.388 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:51.388 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 226 ms
+2021-11-04 07:32:51.390 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:51.391 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 228 ms
+2021-11-04 07:32:51.626 ERROR (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 1 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:51.626 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:51.637 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[GB18030TEST (1715482050299953152)]} 0 472
+2021-11-04 07:32:51.918 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:51.918 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:51.919 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 3 from Zookeeper
+2021-11-04 07:32:51.919 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 3 from Zookeeper
+2021-11-04 07:32:51.934 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:51.969 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:51.969 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:51.969 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:51.969 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:51.969 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:51.970 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:51.977 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:51.977 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:51.977 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:51.977 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:51.977 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:52.114 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:52.114 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 195 ms
+2021-11-04 07:32:52.120 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:52.120 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 199 ms
+2021-11-04 07:32:52.499 ERROR (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 2 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:52.499 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:52.516 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[SP2514N (1715482051215360000), 6H500F0 (1715482051221651456)]} 0 594
+2021-11-04 07:32:52.692 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:52.693 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:52.694 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 4 from Zookeeper
+2021-11-04 07:32:52.695 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 4 from Zookeeper
+2021-11-04 07:32:52.734 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:52.741 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:52.742 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:52.742 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:52.742 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:52.742 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:52.751 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:52.757 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:52.757 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:52.757 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:52.757 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:52.757 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:52.905 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:52.905 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 210 ms
+2021-11-04 07:32:52.914 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:52.914 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 219 ms
+2021-11-04 07:32:53.128 ERROR (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 3 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:53.128 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:53.166 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[F8V7067-APL-KIT (1715482051877011456)]} 0 467
+2021-11-04 07:32:53.252 ERROR (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 3 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:53.252 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:53.288 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[IW-02 (1715482052005986304)]} 0 541
+2021-11-04 07:32:53.587 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:53.587 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:53.590 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 5 from Zookeeper
+2021-11-04 07:32:53.590 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 5 from Zookeeper
+2021-11-04 07:32:53.608 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:53.609 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:53.625 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:53.625 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:53.625 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:53.625 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:53.625 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:53.627 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:53.627 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:53.627 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:53.627 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:53.627 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:53.677 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:32:53.677 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:32:53.679 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:32:53.683 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:32:53.756 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:53.756 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 165 ms
+2021-11-04 07:32:53.758 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:53.758 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 167 ms
+2021-11-04 07:32:53.968 ERROR (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 4 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:53.968 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:53.997 INFO  (qtp1470344997-18) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[MA147LL/A (1715482052757815296)]} 0 404
+2021-11-04 07:32:54.026 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[apple (1715482052801855488), ati (1715482052803952640), canon (1715482052806049792), corsair (1715482052807098368), dell (1715482052809195520), samsung (1715482052810244096), viewsonic (1715482052811292672)]} 0 14
+2021-11-04 07:32:54.029 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[adata (1715482052797661184), asus (1715482052799758336), belkin (1715482052801855488), maxtor (1715482052803952640)]} 0 21
+2021-11-04 07:32:54.258 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:54.258 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:54.259 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 6 from Zookeeper
+2021-11-04 07:32:54.259 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 6 from Zookeeper
+2021-11-04 07:32:54.266 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:54.266 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:54.273 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:54.276 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:54.276 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:54.276 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:54.276 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:54.308 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:54.308 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:54.308 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:54.308 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:54.308 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:54.475 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:54.475 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 214 ms
+2021-11-04 07:32:54.476 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:54.477 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 216 ms
+2021-11-04 07:32:54.784 ERROR (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 5 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:54.784 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:54.807 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[TWINX2048-3200PRO (1715482053612404736), VS1GB400C3 (1715482053617647616), VDBDB1A16 (1715482053623939072)]} 0 545
+2021-11-04 07:32:55.087 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:55.087 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader A schema change: WatchedEvent state:SyncConnected type:NodeDataChanged path:/configs/gettingstarted/managed-schema, has occurred - updating schema from ZooKeeper ...
+2021-11-04 07:32:55.089 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 7 from Zookeeper
+2021-11-04 07:32:55.089 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Retrieved schema version 7 from Zookeeper
+2021-11-04 07:32:55.104 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:55.134 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:55.134 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:55.134 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:55.134 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:55.134 WARN  (zkCallback-12-thread-3) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:55.141 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:32:55.147 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-11-04 07:32:55.147 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-11-04 07:32:55.147 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-11-04 07:32:55.147 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-11-04 07:32:55.147 WARN  (zkCallback-12-thread-5) [   ] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-11-04 07:32:55.251 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:55.251 INFO  (zkCallback-12-thread-5) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 162 ms
+2021-11-04 07:32:55.254 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:32:55.254 INFO  (zkCallback-12-thread-3) [   ] o.a.s.s.ZkIndexSchemaReader Finished refreshing schema in 165 ms
+2021-11-04 07:32:55.532 ERROR (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 6 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:55.532 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:55.658 ERROR (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Bad version when trying to persist schema using 6 due to:  => org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122)
+org.apache.zookeeper.KeeperException$BadVersionException: KeeperErrorCode = BadVersion for /configs/gettingstarted/managed-schema
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:122) ~[?:?]
+	at org.apache.zookeeper.KeeperException.create(KeeperException.java:54) ~[?:?]
+	at org.apache.zookeeper.ZooKeeper.setData(ZooKeeper.java:2561) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.lambda$setData$7(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.common.cloud.ZkCmdExecutor.retryOperation(ZkCmdExecutor.java:79) ~[?:?]
+	at org.apache.solr.common.cloud.SolrZkClient.setData(SolrZkClient.java:355) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchemaToZooKeeper(ManagedIndexSchema.java:193) ~[?:?]
+	at org.apache.solr.schema.ManagedIndexSchema.persistManagedSchema(ManagedIndexSchema.java:122) ~[?:?]
+	at org.apache.solr.update.processor.AddSchemaFieldsUpdateProcessorFactory$AddSchemaFieldsUpdateProcessor.processAdd(AddSchemaFieldsUpdateProcessorFactory.java:462) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader$1.update(JavabinLoader.java:110) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readOuterMostDocIterator(JavaBinUpdateRequestCodec.java:344) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readIterator(JavaBinUpdateRequestCodec.java:292) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:338) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec$StreamingCodec.readNamedList(JavaBinUpdateRequestCodec.java:245) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readObject(JavaBinCodec.java:303) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.readVal(JavaBinCodec.java:283) ~[?:?]
+	at org.apache.solr.common.util.JavaBinCodec.unmarshal(JavaBinCodec.java:196) ~[?:?]
+	at org.apache.solr.client.solrj.request.JavaBinUpdateRequestCodec.unmarshal(JavaBinUpdateRequestCodec.java:131) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.parseAndLoadDocs(JavabinLoader.java:122) ~[?:?]
+	at org.apache.solr.handler.loader.JavabinLoader.load(JavabinLoader.java:70) ~[?:?]
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97) ~[?:?]
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216) ~[?:?]
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.run(HttpChannel.java:352) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.produce(HTTP2Connection.java:183) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection.onFillable(HTTP2Connection.java:138) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.http2.HTTP2Connection$FillableCallback.succeeded(HTTP2Connection.java:361) ~[http2-common-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:32:55.658 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.s.ManagedIndexSchema Failed to persist managed schema at /configs/gettingstarted/managed-schema - version mismatch
+2021-11-04 07:32:55.681 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[EUR (1715482054527811584), NOK (1715482054533054464)]} 0 567
+2021-11-04 07:32:55.691 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[USD (1715482054395691008), GBP (1715482054396739584)]} 0 599
+2021-11-04 07:32:55.720 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[3007WFP (1715482054582337536)]} 0 12
+2021-11-04 07:32:55.741 INFO  (qtp1470344997-18) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[VA902B (1715482054604357632)]} 0 10
+2021-11-04 07:32:55.764 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[0060248025 (1715482054631620608)]} 0 7
+2021-11-04 07:32:55.769 INFO  (qtp1470344997-25) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[0679805273 (1715482054631620608)]} 0 11
+2021-11-04 07:32:55.820 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[0579B002 (1715482054677757952)]} 0 19
+2021-11-04 07:32:56.111 INFO  (qtp1470344997-24) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[9885A004 (1715482054984990720)]} 0 18
+2021-11-04 07:32:56.276 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:32:56.280 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:32:56.385 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:32:56.386 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:32:56.559 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[SOLR1000 (1715482055462092800)]} 0 9
+2021-11-04 07:32:56.647 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&wt=javabin&version=2}{add=[UTF8TEST (1715482055529201664)]} 0 33
+2021-11-04 07:32:56.667 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[100-435805 (1715482055574290432)]} 0 10
+2021-11-04 07:32:56.670 INFO  (qtp1470344997-24) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&wt=javabin&version=2}{add=[EN7800GTX/2DHTV/256M (1715482055572193280)]} 0 15
+2021-11-04 07:33:02.185 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:33:02.186 INFO  (searcherExecutor-35-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard2_replica_n4 c:gettingstarted s:shard2 r:core_node7) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:33:02.187 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard2_replica_n4]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 5504
+2021-11-04 07:33:02.203 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:33:02.204 INFO  (searcherExecutor-37-thread-1-processing-n:192.168.10.186:7574_solr x:gettingstarted_shard1_replica_n1 c:gettingstarted s:shard1 r:core_node3) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:33:02.205 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.u.p.LogUpdateProcessorFactory [gettingstarted_shard1_replica_n1]  webapp=/solr path=/update params={update.distrib=TOLEADER&waitSearcher=true&openSearcher=true&commit=true&softCommit=false&distrib.from=http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&commit_end_point=leaders&wt=javabin&version=2&expungeDeletes=false}{commit=} 0 5523
+2021-11-04 07:33:09.854 INFO  (qtp1470344997-25) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.10.186:7574/solr/gettingstarted_shard2_replica_n4/|http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&rows=10&rid=-2&version=2&q=*:*&omitHeader=false&NOW=1636011189690&isShard=true&wt=javabin&_=1636011187537} hits=27 status=0 QTime=71
+2021-11-04 07:33:09.854 INFO  (qtp1470344997-19) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.10.186:7574/solr/gettingstarted_shard1_replica_n1/|http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&rows=10&rid=-2&version=2&q=*:*&omitHeader=false&NOW=1636011189690&isShard=true&wt=javabin&_=1636011187537} hits=21 status=0 QTime=71
+2021-11-04 07:33:09.929 INFO  (qtp1470344997-20) [c:gettingstarted s:shard1 r:core_node3 x:gettingstarted_shard1_replica_n1] o.a.s.c.S.Request [gettingstarted_shard1_replica_n1]  webapp=/solr path=/select params={df=_text_&distrib=false&shards.purpose=64&q.op=OR&shard.url=http://192.168.10.186:7574/solr/gettingstarted_shard1_replica_n1/|http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/&rows=10&rid=-2&version=2&q=*:*&omitHeader=false&NOW=1636011189690&ids=0805080481,GB18030TEST,0812521390,0441385532,MA147LL/A,080508049X,0380014300,IW-02,978-0641723445,adata&isShard=true&wt=javabin&_=1636011187537} status=0 QTime=3
+2021-11-04 07:33:10.022 INFO  (qtp1470344997-19) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/select params={df=_text_&distrib=false&fl=id&fl=score&shards.purpose=16388&start=0&fsv=true&q.op=OR&shard.url=http://192.168.10.186:7574/solr/gettingstarted_shard2_replica_n4/|http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&rows=10&rid=-3&version=2&q=*:*&omitHeader=false&NOW=1636011190013&isShard=true&wt=javabin&_=1636011187537} hits=27 status=0 QTime=2
+2021-11-04 07:33:10.085 INFO  (qtp1470344997-20) [c:gettingstarted s:shard2 r:core_node7 x:gettingstarted_shard2_replica_n4] o.a.s.c.S.Request [gettingstarted_shard2_replica_n4]  webapp=/solr path=/select params={df=_text_&distrib=false&shards.purpose=64&q.op=OR&shard.url=http://192.168.10.186:7574/solr/gettingstarted_shard2_replica_n4/|http://192.168.10.186:8983/solr/gettingstarted_shard2_replica_n6/&rows=10&rid=-3&version=2&q=*:*&omitHeader=false&NOW=1636011190013&ids=0553293354,055357342X,6H500F0,978-1933988177,0553579908,978-1423103349,978-1857995879,0553573403,0812550706,SP2514N&isShard=true&wt=javabin&_=1636011187537} status=0 QTime=2
+2021-11-04 07:33:39.268 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@3d5c822d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:7574}
+2021-11-04 07:33:39.268 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-11-04 07:33:39.269 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=402808045
+2021-11-04 07:33:39.269 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.10.186:7574_solr
+2021-11-04 07:33:39.399 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-11-04 07:33:39.399 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.10.186:7574_solr as DOWN
+2021-11-04 07:33:39.535 INFO  (coreCloseExecutor-46-thread-1) [   ] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n1]  CLOSING SolrCore org.apache.solr.core.SolrCore@966ce6c
+2021-11-04 07:33:39.535 INFO  (coreCloseExecutor-46-thread-2) [   ] o.a.s.c.SolrCore [gettingstarted_shard2_replica_n4]  CLOSING SolrCore org.apache.solr.core.SolrCore@599484e2
+2021-11-04 07:33:39.535 INFO  (coreCloseExecutor-46-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard2.replica_n4 tag=SolrCore@599484e2
+2021-11-04 07:33:39.535 INFO  (coreCloseExecutor-46-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@382418ec: rootName = null, domain = solr.core.gettingstarted.shard2.replica_n4, service url = null, agent id = null] for registry solr.core.gettingstarted.shard2.replica_n4/com.codahale.metrics.MetricRegistry@3cd19fc0
+2021-11-04 07:33:39.538 INFO  (coreCloseExecutor-46-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard2.leader tag=SolrCore@599484e2
+2021-11-04 07:33:39.539 INFO  (coreCloseExecutor-46-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard1.replica_n1 tag=SolrCore@966ce6c
+2021-11-04 07:33:39.539 INFO  (coreCloseExecutor-46-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2519174e: rootName = null, domain = solr.core.gettingstarted.shard1.replica_n1, service url = null, agent id = null] for registry solr.core.gettingstarted.shard1.replica_n1/com.codahale.metrics.MetricRegistry@7a0c0c3b
+2021-11-04 07:33:39.542 INFO  (coreCloseExecutor-46-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-04 07:33:39.545 INFO  (coreCloseExecutor-46-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard1.leader tag=SolrCore@966ce6c
+2021-11-04 07:33:39.548 INFO  (coreCloseExecutor-46-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-04 07:33:39.627 INFO  (zkCallback-12-thread-3) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2021-11-04 07:33:39.626 INFO  (zkCallback-12-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [2])
+2021-11-04 07:33:39.631 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-11-04 07:33:39.631 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@363f0ba0: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@7a1a17a
+2021-11-04 07:33:39.632 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-11-04 07:33:39.632 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@62ce72ff: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@599ee1be
+2021-11-04 07:33:39.633 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-11-04 07:33:39.633 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@58a63629: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7f1693cb
+2021-11-04 07:33:39.633 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-11-04 07:33:39.963 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@58cbafc2{/solr,null,STOPPED}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}

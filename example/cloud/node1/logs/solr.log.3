@@ -1,0 +1,1449 @@
+2021-11-04 07:19:59.148 INFO  (main) [   ] o.e.j.u.log Logging initialized @6403ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-11-04 07:19:59.724 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_311-b11
+2021-11-04 07:19:59.738 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///D:/Programming/solr-8.10.1/server/contexts/] at interval 0
+2021-11-04 07:20:00.377 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-11-04 07:20:00.389 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-11-04 07:20:00.389 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-11-04 07:20:00.392 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-11-04 07:20:00.570 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-11-04 07:20:00.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-11-04 07:20:00.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in cloud mode on port 8983
+2021-11-04 07:20:00.585 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: D:\Programming\solr-8.10.1
+2021-11-04 07:20:00.586 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-11-04T07:20:00.586Z
+2021-11-04 07:20:00.651 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: D:\Programming\solr-8.10.1\example\cloud\node1\solr
+2021-11-04 07:20:00.652 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from D:\Programming\solr-8.10.1\example\cloud\node1\solr\solr.xml
+2021-11-04 07:20:00.965 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8, but no JMX reporters were configured - adding default JMX reporter.
+2021-11-04 07:20:01.851 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-11-04 07:20:02.485 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@10b892d5[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:20:02.485 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@10b892d5[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:20:02.606 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6a175569[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:20:02.606 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6a175569[provider=null,keyStore=null,trustStore=null]
+2021-11-04 07:20:02.772 INFO  (main) [   ] o.a.s.c.SolrZkServerProps Reading configuration from: D:\Programming\solr-8.10.1\example\cloud\node1\solr\zoo.cfg
+2021-11-04 07:20:02.782 INFO  (main) [   ] o.a.s.c.SolrZkServer STARTING EMBEDDED STANDALONE ZOOKEEPER SERVER at port 9983
+2021-11-04 07:20:02.782 WARN  (main) [   ] o.a.s.c.SolrZkServer Embedded Zookeeper is not recommended in production environments. See Reference Guide for details.
+2021-11-04 07:20:02.926 WARN  (Thread-12) [   ] o.a.z.s.ServerCnxnFactory maxCnxns is not configured, using default value 0.
+2021-11-04 07:20:03.282 INFO  (main) [   ] o.a.s.c.ZkContainer Zookeeper client=localhost:9983
+2021-11-04 07:20:03.646 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Waiting for client to connect to ZooKeeper
+2021-11-04 07:20:03.663 WARN  (NIOWorkerThread-1) [   ] o.a.z.s.NIOServerCnxn Close of session 0x0 => java.io.IOException: ZooKeeperServer not running
+	at org.apache.zookeeper.server.NIOServerCnxn.readLength(NIOServerCnxn.java:544)
+java.io.IOException: ZooKeeperServer not running
+	at org.apache.zookeeper.server.NIOServerCnxn.readLength(NIOServerCnxn.java:544) ~[?:?]
+	at org.apache.zookeeper.server.NIOServerCnxn.doIO(NIOServerCnxn.java:332) ~[?:?]
+	at org.apache.zookeeper.server.NIOServerCnxnFactory$IOWorkRequest.doWork(NIOServerCnxnFactory.java:522) ~[?:?]
+	at org.apache.zookeeper.server.WorkerService$ScheduledWorkRequest.run(WorkerService.java:154) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source) ~[?:1.8.0_311]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:20:03.664 WARN  (main-SendThread(localhost:9983)) [   ] o.a.z.ClientCnxn Session 0x0 for sever localhost/127.0.0.1:9983, Closing socket connection. Attempting reconnect except it is a SessionExpiredException. => EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77)
+org.apache.zookeeper.ClientCnxn$EndOfStreamException: Unable to read additional data from server sessionid 0x0, likely server has closed socket
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doIO(ClientCnxnSocketNIO.java:77) ~[?:?]
+	at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport(ClientCnxnSocketNIO.java:350) ~[?:?]
+	at org.apache.zookeeper.ClientCnxn$SendThread.run(ClientCnxn.java:1275) ~[?:?]
+2021-11-04 07:20:05.550 INFO  (zkConnectionManagerCallback-11-thread-1) [   ] o.a.s.c.c.ConnectionManager zkClient has connected
+2021-11-04 07:20:05.550 INFO  (main) [   ] o.a.s.c.c.ConnectionManager Client is connected to ZooKeeper
+2021-11-04 07:20:05.600 WARN  (main) [   ] o.a.s.c.ZkController Contents of zookeeper /security.json are world-readable; consider setting up ACLs as described in https://solr.apache.org/guide/zookeeper-access-control.html
+2021-11-04 07:20:05.611 INFO  (main) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (0) -> (1)
+2021-11-04 07:20:05.770 INFO  (main) [   ] o.a.s.c.ZkController Publish node=192.168.10.186:8983_solr as DOWN
+2021-11-04 07:20:05.900 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-11-04 07:20:05.932 INFO  (main) [   ] o.a.s.c.ZkController Register node as live in ZooKeeper:/live_nodes/192.168.10.186:8983_solr
+2021-11-04 07:20:06.072 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (1) -> (2)
+2021-11-04 07:20:06.143 INFO  (main) [   ] o.a.s.p.PackageLoader /packages.json updated to version -1
+2021-11-04 07:20:06.156 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-11-04 07:20:06.463 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-11-04 07:20:06.588 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:20:06.589 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:20:06.590 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:20:06.692 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath D:\Programming\solr-8.10.1\example\cloud\node1\solr
+2021-11-04 07:20:06.692 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [gettingstarted_shard1_replica_n2, KnowledgeManagement_shard2_replica_n6]
+2021-11-04 07:20:06.808 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:20:06.808 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:20:07.127 WARN  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:20:07.127 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:20:07.206 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:20:07.207 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:20:09.579 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:20:09.579 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [   ] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:20:10.102 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@58cbafc2{/solr,file:///D:/Programming/solr-8.10.1/server/solr-webapp/webapp/,AVAILABLE}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}
+2021-11-04 07:20:10.136 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@3d5c822d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-04 07:20:10.136 INFO  (main) [   ] o.e.j.s.Server Started @17408ms
+2021-11-04 07:20:10.771 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=91
+2021-11-04 07:20:10.771 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=91
+2021-11-04 07:20:10.918 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=12
+2021-11-04 07:20:10.919 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json} status=0 QTime=5
+2021-11-04 07:20:13.513 INFO  (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=list&wt=json} status=0 QTime=5
+2021-11-04 07:20:35.269 INFO  (zkCallback-10-thread-1) [   ] o.a.s.c.c.ZkStateReader Updated live nodes from ZooKeeper... (2) -> (1)
+2021-11-04 07:20:35.271 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.OverseerElectionContext I am going to be the leader 192.168.10.186:8983_solr
+2021-11-04 07:20:35.603 INFO  (zkCallback-10-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057745987665920-192.168.10.186:8983_solr-n_0000000008) starting
+2021-11-04 07:20:35.807 INFO  (OverseerStateUpdate-72057745987665920-192.168.10.186:8983_solr-n_0000000008) [   ] o.a.s.c.Overseer Starting to work on the main queue : 192.168.10.186:8983_solr
+2021-11-04 07:20:36.291 WARN  (ScheduledTrigger-21-thread-1) [   ] o.a.s.c.a.ScheduledTrigger ScheduledTrigger was not able to run event at scheduled time: 2021-11-02T07:43:23.948Z. Now: 2021-11-04T07:20:36.290Z
+2021-11-04 07:20:36.622 ERROR (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/gettingstarted/config with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:137)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 41 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 51 more
+
+2021-11-04 07:20:37.450 WARN  (ScheduledTrigger-21-thread-1) [   ] o.a.s.c.a.ScheduledTrigger ScheduledTrigger was not able to run event at scheduled time: 2021-11-03T07:43:23.948Z. Now: 2021-11-04T07:20:37.449Z
+2021-11-04 07:20:37.790 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:20:37.790 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-11-04 07:20:37.791 WARN  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:20:37.791 WARN  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-11-04 07:20:37.794 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:20:37.794 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.s.IndexSchema Schema name=default-config
+2021-11-04 07:20:37.895 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:20:37.905 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-11-04 07:20:37.967 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.CoreContainer Creating SolrCore 'gettingstarted_shard1_replica_n2' using configuration from configset gettingstarted, trusted=true
+2021-11-04 07:20:37.974 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.CoreContainer Creating SolrCore 'KnowledgeManagement_shard2_replica_n6' using configuration from configset KnowledgeManagement, trusted=true
+2021-11-04 07:20:38.005 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.KnowledgeManagement.shard2.replica_n6' (registry 'solr.core.KnowledgeManagement.shard2.replica_n6') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:20:38.005 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.gettingstarted.shard1.replica_n2' (registry 'solr.core.gettingstarted.shard1.replica_n2') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@7ee955a8
+2021-11-04 07:20:38.014 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [[gettingstarted_shard1_replica_n2] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node1\solr\gettingstarted_shard1_replica_n2], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node1\solr\gettingstarted_shard1_replica_n2\data\]
+2021-11-04 07:20:38.014 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SolrCore [[KnowledgeManagement_shard2_replica_n6] ] Opening new SolrCore at [D:\Programming\solr-8.10.1\example\cloud\node1\solr\KnowledgeManagement_shard2_replica_n6], dataDir=[D:\Programming\solr-8.10.1\example\cloud\node1\solr\KnowledgeManagement_shard2_replica_n6\data\]
+2021-11-04 07:20:39.015 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-04 07:20:39.015 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-11-04 07:20:39.015 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-04 07:20:39.015 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-11-04 07:20:39.029 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:20:39.029 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-11-04 07:20:39.029 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-11-04 07:20:39.029 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2021-11-04 07:20:39.275 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/gettingstarted
+2021-11-04 07:20:39.275 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Configured ZooKeeperStorageIO with znodeBase: /configs/KnowledgeManagement
+2021-11-04 07:20:39.280 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/KnowledgeManagement
+2021-11-04 07:20:39.280 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.r.ManagedResourceStorage Loaded null at path _rest_managed.json using ZooKeeperStorageIO:path=/configs/gettingstarted
+2021-11-04 07:20:39.283 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/gettingstarted/managed-schema
+2021-11-04 07:20:39.283 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Creating ZooKeeper watch for the managed schema at /configs/KnowledgeManagement/managed-schema
+2021-11-04 07:20:39.285 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:20:39.285 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.s.ZkIndexSchemaReader Current schema version 0 is already the latest
+2021-11-04 07:20:39.299 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:20:39.299 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-11-04 07:20:39.308 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:20:39.308 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-11-04 07:20:39.323 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:20:39.323 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-11-04 07:20:39.332 INFO  (coreLoadExecutor-19-thread-2-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481282432991232
+2021-11-04 07:20:39.332 INFO  (coreLoadExecutor-19-thread-1-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1715481282432991232
+2021-11-04 07:20:39.343 INFO  (searcherExecutor-26-thread-1-processing-n:192.168.10.186:8983_solr x:KnowledgeManagement_shard2_replica_n6 c:KnowledgeManagement s:shard2 r:core_node8) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:20:39.344 INFO  (searcherExecutor-26-thread-1-processing-n:192.168.10.186:8983_solr x:KnowledgeManagement_shard2_replica_n6 c:KnowledgeManagement s:shard2 r:core_node8) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:20:39.344 INFO  (searcherExecutor-27-thread-1-processing-n:192.168.10.186:8983_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-11-04 07:20:39.344 INFO  (searcherExecutor-27-thread-1-processing-n:192.168.10.186:8983_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-11-04 07:20:39.356 INFO  (searcherExecutor-26-thread-1-processing-n:192.168.10.186:8983_solr x:KnowledgeManagement_shard2_replica_n6 c:KnowledgeManagement s:shard2 r:core_node8) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SolrCore [KnowledgeManagement_shard2_replica_n6]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:20:39.356 INFO  (searcherExecutor-27-thread-1-processing-n:192.168.10.186:8983_solr x:gettingstarted_shard1_replica_n2 c:gettingstarted s:shard1 r:core_node5) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2]  Registered new searcher autowarm time: 0 ms
+2021-11-04 07:20:40.277 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/gettingstarted/leaders/shard1
+2021-11-04 07:20:40.277 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase make sure parent is created /collections/KnowledgeManagement/leaders/shard2
+2021-11-04 07:20:40.782 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=179996ms
+2021-11-04 07:20:40.782 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=179860ms
+2021-11-04 07:20:53.211 INFO  (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:20:53.250 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=42
+2021-11-04 07:20:53.250 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=36
+2021-11-04 07:20:53.285 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:20:53.313 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:20:53.329 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=5
+2021-11-04 07:21:01.064 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=159577ms
+2021-11-04 07:21:01.064 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=159713ms
+2021-11-04 07:21:21.227 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=139551ms
+2021-11-04 07:21:21.237 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=139405ms
+2021-11-04 07:21:25.167 ERROR (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:21:41.357 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=119420ms
+2021-11-04 07:21:41.357 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=119284ms
+2021-11-04 07:21:46.246 ERROR (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update/json/docs with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:01.506 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=99272ms
+2021-11-04 07:22:01.506 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=99136ms
+2021-11-04 07:22:04.719 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:04.730 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1636010452776} status=0 QTime=9
+2021-11-04 07:22:04.747 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=27
+2021-11-04 07:22:04.775 INFO  (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:04.788 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:04.801 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:07.278 ERROR (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:08.851 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:08.869 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=18
+2021-11-04 07:22:08.976 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:08.987 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:08.998 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:21.621 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=79157ms
+2021-11-04 07:22:21.644 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=78998ms
+2021-11-04 07:22:21.981 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:22.006 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=23
+2021-11-04 07:22:22.016 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:22.028 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:22.038 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:28.303 ERROR (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:32.944 ERROR (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/KnowledgeManagement/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:37.017 ERROR (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/KnowledgeManagement/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:37.258 INFO  (AutoscalingActionExecutor-22-thread-1) [   ] o.a.s.c.a.ExecutePlanAction No operations to execute for event: {
+  "id":"2237e2c8dc0T7q699pivxfwnhw60orm8sx4es",
+  "source":".auto_add_replicas",
+  "eventTime":2351463960000,
+  "eventType":"NODELOST",
+  "properties":{
+    "eventTimes":[
+      2351463960000,
+      2351463964200],
+    "preferredOperation":"movereplica",
+    "_enqueue_time_":2471812573100,
+    "nodeNames":[
+      "192.168.10.216:8984_solr",
+      "192.168.10.216:8983_solr"]}}
+2021-11-04 07:22:41.748 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=59030ms
+2021-11-04 07:22:41.770 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=58871ms
+2021-11-04 07:22:43.002 ERROR (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/KnowledgeManagement/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:48.024 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:48.039 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1636010452776} status=0 QTime=8
+2021-11-04 07:22:48.061 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=34
+2021-11-04 07:22:48.073 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=3
+2021-11-04 07:22:48.083 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:48.092 INFO  (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:49.329 ERROR (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:22:49.896 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:49.919 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=23
+2021-11-04 07:22:49.934 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:49.942 INFO  (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:49.951 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:55.839 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:55.854 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=CLUSTERSTATUS&wt=json&_=1636010452776} status=0 QTime=11
+2021-11-04 07:22:55.871 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=28
+2021-11-04 07:22:55.882 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=3
+2021-11-04 07:22:55.891 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:55.901 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:58.735 INFO  (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:58.757 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=20
+2021-11-04 07:22:58.768 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:58.780 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=3
+2021-11-04 07:22:58.790 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:22:59.509 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:59.527 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=17
+2021-11-04 07:22:59.538 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:22:59.548 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:22:59.556 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:23:00.421 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:23:00.445 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=24
+2021-11-04 07:23:00.456 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:23:00.467 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:23:00.474 INFO  (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:23:01.906 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=38872ms
+2021-11-04 07:23:01.906 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=38735ms
+2021-11-04 07:23:02.081 INFO  (qtp1470344997-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:23:02.103 INFO  (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1636010452776} status=0 QTime=20
+2021-11-04 07:23:02.112 INFO  (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LIST&wt=json&_=1636010452776} status=0 QTime=2
+2021-11-04 07:23:02.125 INFO  (qtp1470344997-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/collections params={action=LISTALIASES&wt=json&_=1636010452776} status=0 QTime=0
+2021-11-04 07:23:02.134 INFO  (qtp1470344997-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/schema-designer/configs params={wt=json&_=1636010452776} status=0 QTime=1
+2021-11-04 07:23:10.370 ERROR (qtp1470344997-20) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:13.017 ERROR (qtp1470344997-26) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7575/solr/gettingstarted/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7575 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:19.744 ERROR (qtp1470344997-18) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/KnowledgeManagement/admin/file with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:20.518 ERROR (qtp1470344997-88) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/KnowledgeManagement/admin/luke with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:22.055 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard2: total=2 found=1 timeoute in=18586ms
+2021-11-04 07:23:22.055 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Waiting until we see more replicas up for shard shard1: total=2 found=1 timeoute in=18722ms
+2021-11-04 07:23:23.101 ERROR (qtp1470344997-17) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/KnowledgeManagement/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:23.136 ERROR (qtp1470344997-25) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:8984/solr/KnowledgeManagement/select with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:8984 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:31.403 ERROR (qtp1470344997-24) [   ] o.a.s.s.HttpSolrCall org.apache.solr.common.SolrException: Error trying to proxy request for url: http://192.168.10.216:7574/solr/gettingstarted/update with _forwardCount: 1
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:729)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:550)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.10.216:7574 [/192.168.10.216] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.apache.solr.servlet.HttpSolrCall.remoteQuery(HttpSolrCall.java:697)
+	... 42 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 52 more
+
+2021-11-04 07:23:31.404 INFO  (qtp1470344997-24) [   ] o.a.s.s.SolrDispatchFilter Could not consume full client request => org.eclipse.jetty.io.EofException: Early EOF
+	at org.eclipse.jetty.server.HttpInput$3.getError(HttpInput.java:1207)
+org.eclipse.jetty.io.EofException: Early EOF
+	at org.eclipse.jetty.server.HttpInput$3.getError(HttpInput.java:1207) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpInput$3.noContent(HttpInput.java:1195) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpInput.read(HttpInput.java:333) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpInput.read(HttpInput.java:270) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.apache.solr.servlet.ServletInputStreamWrapper.read(ServletInputStreamWrapper.java:66) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.consumeInputFully(SolrDispatchFilter.java:465) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:453) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357) ~[?:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600) ~[jetty-security-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501) ~[jetty-servlet-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322) ~[jetty-rewrite-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.Server.handle(Server.java:516) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277) ~[jetty-server-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104) ~[jetty-io-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034) ~[jetty-util-9.4.44.v20210927.jar:9.4.44.v20210927]
+	at java.lang.Thread.run(Unknown Source) [?:1.8.0_311]
+2021-11-04 07:23:40.713 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext Was waiting for replicas to come up, but they are taking too long - assuming they won't come back till later
+2021-11-04 07:23:40.714 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-11-04 07:23:40.714 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SyncStrategy Sync replicas to http://192.168.10.186:8983/solr/KnowledgeManagement_shard2_replica_n6/
+2021-11-04 07:23:40.716 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2021-11-04 07:23:40.718 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.SyncStrategy http://192.168.10.186:8983/solr/KnowledgeManagement_shard2_replica_n6/ has no replicas
+2021-11-04 07:23:40.719 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/KnowledgeManagement/leaders/shard2/leader after winning as /collections/KnowledgeManagement/leader_elect/shard2/election/72057745987665920-core_node8-n_0000000004
+2021-11-04 07:23:40.988 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.10.186:8983/solr/KnowledgeManagement_shard2_replica_n6/ shard2
+2021-11-04 07:23:41.239 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext Was waiting for replicas to come up, but they are taking too long - assuming they won't come back till later
+2021-11-04 07:23:41.239 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext I may be the new leader - try and sync
+2021-11-04 07:23:41.239 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy Sync replicas to http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/
+2021-11-04 07:23:41.241 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy Sync Success - now sync replicas to me
+2021-11-04 07:23:41.243 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.SyncStrategy http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/ has no replicas
+2021-11-04 07:23:41.243 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContextBase Creating leader registration node /collections/gettingstarted/leaders/shard1/leader after winning as /collections/gettingstarted/leader_elect/shard1/election/72057745987665920-core_node5-n_0000000002
+2021-11-04 07:23:41.342 INFO  (coreZkRegister-1-thread-2-processing-n:192.168.10.186:8983_solr) [c:KnowledgeManagement s:shard2 r:core_node8 x:KnowledgeManagement_shard2_replica_n6] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-11-04 07:23:41.441 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ShardLeaderElectionContext I am the new leader: http://192.168.10.186:8983/solr/gettingstarted_shard1_replica_n2/ shard1
+2021-11-04 07:23:41.735 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:41.826 INFO  (coreZkRegister-1-thread-1-processing-n:192.168.10.186:8983_solr) [c:gettingstarted s:shard1 r:core_node5 x:gettingstarted_shard1_replica_n2] o.a.s.c.ZkController I am the leader, no recovery necessary
+2021-11-04 07:23:41.826 INFO  (zkCallback-10-thread-4) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:41.826 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:42.244 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:42.244 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:50.193 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@3d5c822d{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-11-04 07:23:50.193 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-11-04 07:23:50.196 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=333793193
+2021-11-04 07:23:50.196 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Remove node as live in ZooKeeper:/live_nodes/192.168.10.186:8983_solr
+2021-11-04 07:23:50.308 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish this node as DOWN...
+2021-11-04 07:23:50.308 INFO  (ShutdownMonitor) [   ] o.a.s.c.ZkController Publish node=192.168.10.186:8983_solr as DOWN
+2021-11-04 07:23:50.420 INFO  (coreCloseExecutor-38-thread-2) [   ] o.a.s.c.SolrCore [gettingstarted_shard1_replica_n2]  CLOSING SolrCore org.apache.solr.core.SolrCore@477a3c5
+2021-11-04 07:23:50.420 INFO  (coreCloseExecutor-38-thread-1) [   ] o.a.s.c.SolrCore [KnowledgeManagement_shard2_replica_n6]  CLOSING SolrCore org.apache.solr.core.SolrCore@7563d6a3
+2021-11-04 07:23:50.420 INFO  (coreCloseExecutor-38-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.KnowledgeManagement.shard2.replica_n6 tag=SolrCore@7563d6a3
+2021-11-04 07:23:50.421 INFO  (coreCloseExecutor-38-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@56e91b67: rootName = null, domain = solr.core.KnowledgeManagement.shard2.replica_n6, service url = null, agent id = null] for registry solr.core.KnowledgeManagement.shard2.replica_n6/com.codahale.metrics.MetricRegistry@2d785072
+2021-11-04 07:23:50.512 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:50.512 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/gettingstarted/state.json] for collection [gettingstarted] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:50.638 INFO  (zkCallback-10-thread-6) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:50.638 INFO  (zkCallback-10-thread-5) [   ] o.a.s.c.c.ZkStateReader A cluster state change: [WatchedEvent state:SyncConnected type:NodeDataChanged path:/collections/KnowledgeManagement/state.json] for collection [KnowledgeManagement] has occurred - updating... (live nodes size: [1])
+2021-11-04 07:23:50.676 INFO  (coreCloseExecutor-38-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.gettingstarted.shard1.replica_n2 tag=SolrCore@477a3c5
+2021-11-04 07:23:50.676 INFO  (coreCloseExecutor-38-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6965bf0e: rootName = null, domain = solr.core.gettingstarted.shard1.replica_n2, service url = null, agent id = null] for registry solr.core.gettingstarted.shard1.replica_n2/com.codahale.metrics.MetricRegistry@86ac5f9
+2021-11-04 07:23:50.686 INFO  (coreCloseExecutor-38-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.gettingstarted.shard1.leader tag=SolrCore@477a3c5
+2021-11-04 07:23:50.686 INFO  (coreCloseExecutor-38-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.collection.KnowledgeManagement.shard2.leader tag=SolrCore@7563d6a3
+2021-11-04 07:23:50.769 INFO  (coreCloseExecutor-38-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-04 07:23:50.769 INFO  (coreCloseExecutor-38-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-11-04 07:23:50.815 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-11-04 07:23:50.816 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3506d826: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@4af04fda
+2021-11-04 07:23:50.818 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-11-04 07:23:50.818 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2fc2a205: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@26b5c59
+2021-11-04 07:23:50.819 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-11-04 07:23:50.819 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2881ad47: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7ab5f1bf
+2021-11-04 07:23:50.819 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.cluster tag=null
+2021-11-04 07:23:50.821 INFO  (closeThreadPool-40-thread-1) [   ] o.a.s.c.Overseer Overseer (id=72057745987665920-192.168.10.186:8983_solr-n_0000000008) closing
+2021-11-04 07:23:50.821 INFO  (OverseerStateUpdate-72057745987665920-192.168.10.186:8983_solr-n_0000000008) [   ] o.a.s.c.Overseer Overseer Loop exiting : 192.168.10.186:8983_solr
+2021-11-04 07:23:50.822 INFO  (OverseerAutoScalingTriggerThread-72057745987665920-192.168.10.186:8983_solr-n_0000000008) [   ] o.a.s.c.a.OverseerTriggerThread OverseerTriggerThread woken up but we are closed, exiting.
+2021-11-04 07:23:50.824 INFO  (closeThreadPool-40-thread-2) [   ] o.a.s.c.Overseer Overseer (id=72057745987665920-192.168.10.186:8983_solr-n_0000000008) closing
+2021-11-04 07:23:51.046 INFO  (ShutdownMonitor) [   ] o.a.s.c.Overseer Overseer (id=72057745987665920-192.168.10.186:8983_solr-n_0000000008) closing
+2021-11-04 07:23:51.051 WARN  (Thread-12) [   ] o.a.z.s.ZooKeeperServerMain Server interrupted => java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(Unknown Source)
+java.lang.InterruptedException: null
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(Unknown Source) ~[?:1.8.0_311]
+	at java.util.concurrent.CountDownLatch.await(Unknown Source) ~[?:1.8.0_311]
+	at org.apache.zookeeper.server.ZooKeeperServerMain.runFromConfig(ZooKeeperServerMain.java:181) ~[?:?]
+	at org.apache.solr.cloud.SolrZkServer$1.run(SolrZkServer.java:121) ~[?:?]
+2021-11-04 07:23:51.055 INFO  (Thread-12) [   ] o.a.s.c.SolrZkServer ZooKeeper Server exited.
+2021-11-04 07:23:51.075 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@58cbafc2{/solr,null,STOPPED}{D:\Programming\solr-8.10.1\server/solr-webapp/webapp}

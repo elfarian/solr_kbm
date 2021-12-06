@@ -1,91 +1,356 @@
-2021-12-03 02:26:30.722 INFO  (main) [   ] o.e.j.u.log Logging initialized @5031ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-12-03 02:26:31.858 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_281-b09
-2021-12-03 02:26:31.902 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yosa/Development/solr/server/contexts/] at interval 0
-2021-12-03 02:26:32.996 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-12-03 02:26:33.019 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-12-03 02:26:33.019 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-12-03 02:26:33.024 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-12-03 02:26:33.385 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-12-03 02:26:33.395 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
-2021-12-03 02:26:33.397 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
-2021-12-03 02:26:33.397 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yosa/Development/solr
-2021-12-03 02:26:33.399 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-03T02:26:33.398Z
-2021-12-03 02:26:33.605 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/yosa/Development/solr/server/solr
-2021-12-03 02:26:33.607 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/yosa/Development/solr/server/solr/solr.xml
-2021-12-03 02:26:33.885 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6, but no JMX reporters were configured - adding default JMX reporter.
-2021-12-03 02:26:36.059 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
-2021-12-03 02:26:37.369 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@70925b45[provider=null,keyStore=null,trustStore=null]
-2021-12-03 02:26:37.370 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@70925b45[provider=null,keyStore=null,trustStore=null]
-2021-12-03 02:26:37.920 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@6b739528[provider=null,keyStore=null,trustStore=null]
-2021-12-03 02:26:37.921 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@6b739528[provider=null,keyStore=null,trustStore=null]
-2021-12-03 02:26:38.249 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
-2021-12-03 02:26:38.801 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
-2021-12-03 02:26:38.920 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
-2021-12-03 02:26:39.398 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
-2021-12-03 02:26:39.401 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
-2021-12-03 02:26:39.404 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
-2021-12-03 02:26:39.549 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /Users/yosa/Development/solr/server/solr
-2021-12-03 02:26:39.555 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [latihan, hazard]
-2021-12-03 02:26:39.780 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
-2021-12-03 02:26:39.780 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
-2021-12-03 02:26:40.099 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2021-12-03 02:26:40.107 WARN  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
-2021-12-03 02:26:40.224 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4be29ed9{/solr,file:///Users/yosa/Development/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/yosa/Development/solr/server/solr-webapp/webapp}
-2021-12-03 02:26:40.269 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@5403f35f{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-12-03 02:26:40.269 INFO  (main) [   ] o.e.j.s.Server Started @14583ms
-2021-12-03 02:26:40.270 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.IndexSchema Schema name=default-config
-2021-12-03 02:26:40.325 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.s.IndexSchema Schema name=default-config
-2021-12-03 02:26:41.171 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
-2021-12-03 02:26:41.171 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
-2021-12-03 02:26:41.171 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
-2021-12-03 02:26:41.171 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
-2021-12-03 02:26:41.171 WARN  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
-2021-12-03 02:26:41.839 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-12-03 02:26:41.840 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
-2021-12-03 02:26:42.001 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.c.CoreContainer Creating SolrCore 'latihan' using configuration from instancedir /Users/yosa/Development/solr/server/solr/latihan, trusted=true
-2021-12-03 02:26:42.019 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.c.CoreContainer Creating SolrCore 'hazard' using configuration from instancedir /Users/yosa/Development/solr/server/solr/hazard, trusted=true
-2021-12-03 02:26:42.168 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.latihan' (registry 'solr.core.latihan') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
-2021-12-03 02:26:42.172 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.hazard' (registry 'solr.core.hazard') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
-2021-12-03 02:26:42.253 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.c.SolrCore [[hazard] ] Opening new SolrCore at [/Users/yosa/Development/solr/server/solr/hazard], dataDir=[/Users/yosa/Development/solr/server/solr/hazard/data/]
-2021-12-03 02:26:42.296 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.c.SolrCore [[latihan] ] Opening new SolrCore at [/Users/yosa/Development/solr/server/solr/latihan], dataDir=[/Users/yosa/Development/solr/server/solr/latihan/data/]
-2021-12-03 02:26:44.510 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-12-03 02:26:44.510 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
-2021-12-03 02:26:44.511 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-12-03 02:26:44.511 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
-2021-12-03 02:26:44.529 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-12-03 02:26:44.530 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-12-03 02:26:44.533 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
-2021-12-03 02:26:44.534 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.u.CommitTracker Soft AutoCommit: disabled
-2021-12-03 02:26:44.939 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/server/solr/hazard/conf
-2021-12-03 02:26:45.114 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-12-03 02:26:45.133 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2021-12-03 02:26:45.160 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-12-03 02:26:45.338 INFO  (coreLoadExecutor-13-thread-2) [   x:hazard] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1718090103874650112
-2021-12-03 02:26:45.343 INFO  (searcherExecutor-17-thread-1-processing-x:hazard) [   x:hazard] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-12-03 02:26:45.343 INFO  (searcherExecutor-17-thread-1-processing-x:hazard) [   x:hazard] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-12-03 02:26:45.355 INFO  (searcherExecutor-17-thread-1-processing-x:hazard) [   x:hazard] o.a.s.c.SolrCore [hazard]  Registered new searcher autowarm time: 0 ms
-2021-12-03 02:26:45.406 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/server/solr/latihan/conf
-2021-12-03 02:26:45.407 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
-2021-12-03 02:26:45.407 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
-2021-12-03 02:26:45.409 INFO  (coreLoadExecutor-13-thread-1) [   x:latihan] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
-2021-12-03 02:26:45.429 INFO  (searcherExecutor-15-thread-1-processing-x:latihan) [   x:latihan] o.a.s.c.QuerySenderListener QuerySenderListener done.
-2021-12-03 02:26:45.429 INFO  (searcherExecutor-15-thread-1-processing-x:latihan) [   x:latihan] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
-2021-12-03 02:26:45.433 INFO  (searcherExecutor-15-thread-1-processing-x:latihan) [   x:latihan] o.a.s.c.SolrCore [latihan]  Registered new searcher autowarm time: 0 ms
-2021-12-03 02:26:46.454 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@5403f35f{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
-2021-12-03 02:26:46.454 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
-2021-12-03 02:26:46.463 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=975033189
-2021-12-03 02:26:46.482 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.c.SolrCore [hazard]  CLOSING SolrCore org.apache.solr.core.SolrCore@6ae51dc0
-2021-12-03 02:26:46.482 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.hazard tag=SolrCore@6ae51dc0
-2021-12-03 02:26:46.482 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@35170139: rootName = null, domain = solr.core.hazard, service url = null, agent id = null] for registry solr.core.hazard/com.codahale.metrics.MetricRegistry@6a67dae8
-2021-12-03 02:26:46.485 INFO  (coreCloseExecutor-27-thread-2) [   ] o.a.s.c.SolrCore [latihan]  CLOSING SolrCore org.apache.solr.core.SolrCore@7f37b5f7
-2021-12-03 02:26:46.509 INFO  (coreCloseExecutor-27-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.latihan tag=SolrCore@7f37b5f7
-2021-12-03 02:26:46.509 INFO  (coreCloseExecutor-27-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4219e138: rootName = null, domain = solr.core.latihan, service url = null, agent id = null] for registry solr.core.latihan/com.codahale.metrics.MetricRegistry@669ac733
-2021-12-03 02:26:46.534 INFO  (coreCloseExecutor-27-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2021-12-03 02:26:46.534 INFO  (coreCloseExecutor-27-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
-2021-12-03 02:26:46.664 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
-2021-12-03 02:26:46.664 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@19593091: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@30a30714
-2021-12-03 02:26:46.669 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
-2021-12-03 02:26:46.669 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2fe88a09: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@b58e05f
-2021-12-03 02:26:46.671 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
-2021-12-03 02:26:46.671 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1917d90f: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@7f7ff9cb
-2021-12-03 02:26:46.693 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4be29ed9{/solr,null,STOPPED}{/Users/yosa/Development/solr/server/solr-webapp/webapp}
+2021-12-03 02:27:04.015 INFO  (main) [   ] o.e.j.u.log Logging initialized @7139ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-03 02:27:05.077 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_281-b09
+2021-12-03 02:27:05.235 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yosa/Development/solr/server/contexts/] at interval 0
+2021-12-03 02:27:06.706 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-03 02:27:06.949 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-03 02:27:06.949 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-03 02:27:06.953 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-12-03 02:27:07.219 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-03 02:27:07.229 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-12-03 02:27:07.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 6565
+2021-12-03 02:27:07.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yosa/Development/solr
+2021-12-03 02:27:07.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-03T02:27:07.231Z
+2021-12-03 02:27:07.537 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /Users/yosa/Development/solr/smamserver
+2021-12-03 02:27:07.538 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /Users/yosa/Development/solr/smamserver/solr.xml
+2021-12-03 02:27:07.865 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6, but no JMX reporters were configured - adding default JMX reporter.
+2021-12-03 02:27:10.290 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-12-03 02:27:11.781 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@aa22f1c[provider=null,keyStore=null,trustStore=null]
+2021-12-03 02:27:11.781 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@aa22f1c[provider=null,keyStore=null,trustStore=null]
+2021-12-03 02:27:12.331 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@41de5768[provider=null,keyStore=null,trustStore=null]
+2021-12-03 02:27:12.331 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@41de5768[provider=null,keyStore=null,trustStore=null]
+2021-12-03 02:27:12.570 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-12-03 02:27:13.480 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient core cache for max 2147483647 cores with initial capacity of 1024
+2021-12-03 02:27:13.536 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-12-03 02:27:14.117 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:27:14.118 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:27:14.119 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:27:14.193 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /Users/yosa/Development/solr/smamserver
+2021-12-03 02:27:14.194 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [kbm, latihan]
+2021-12-03 02:27:14.300 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.c.SolrResourceLoader Added 3 libs to classloader, from paths: [/Users/yosa/Development/solr/contrib/dataimporthandler/lib, /Users/yosa/Development/solr/dist]
+2021-12-03 02:27:14.300 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.c.SolrResourceLoader Added 3 libs to classloader, from paths: [/Users/yosa/Development/solr/contrib/dataimporthandler/lib, /Users/yosa/Development/solr/dist]
+2021-12-03 02:27:14.958 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@4b013c76{/solr,file:///Users/yosa/Development/solr/server/solr-webapp/webapp/,AVAILABLE}{/Users/yosa/Development/solr/server/solr-webapp/webapp}
+2021-12-03 02:27:15.012 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@7e5afaa6{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:6565}
+2021-12-03 02:27:15.012 INFO  (main) [   ] o.e.j.s.Server Started @18140ms
+2021-12-03 02:27:15.370 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-12-03 02:27:15.370 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-12-03 02:27:15.483 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-03 02:27:15.554 WARN  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-03 02:27:15.776 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-03 02:27:15.778 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-03 02:27:16.217 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-12-03 02:27:16.217 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-12-03 02:27:16.217 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-12-03 02:27:16.217 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-12-03 02:27:16.217 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-12-03 02:27:16.885 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-03 02:27:16.912 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-03 02:27:17.041 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.c.CoreContainer Creating SolrCore 'latihan' using configuration from instancedir /Users/yosa/Development/solr/smamserver/latihan, trusted=true
+2021-12-03 02:27:17.056 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.c.CoreContainer Creating SolrCore 'kbm' using configuration from instancedir /Users/yosa/Development/solr/smamserver/kbm, trusted=true
+2021-12-03 02:27:17.262 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.kbm' (registry 'solr.core.kbm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:27:17.265 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.latihan' (registry 'solr.core.latihan') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:27:17.294 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.c.SolrCore [[kbm] ] Opening new SolrCore at [/Users/yosa/Development/solr/smamserver/kbm], dataDir=[/Users/yosa/Development/solr/smamserver/kbm/data/]
+2021-12-03 02:27:17.301 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.c.SolrCore [[latihan] ] Opening new SolrCore at [/Users/yosa/Development/solr/smamserver/latihan], dataDir=[/Users/yosa/Development/solr/smamserver/latihan/data/]
+2021-12-03 02:27:20.474 WARN  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-12-03 02:27:20.474 WARN  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-12-03 02:27:20.694 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-12-03 02:27:20.695 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-12-03 02:27:20.695 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-12-03 02:27:20.695 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-12-03 02:27:20.717 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-03 02:27:20.717 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-03 02:27:20.734 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-03 02:27:20.735 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-03 02:27:21.211 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/smamserver/kbm/conf
+2021-12-03 02:27:21.390 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-03 02:27:21.415 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-03 02:27:21.476 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-03 02:27:21.628 INFO  (coreLoadExecutor-13-thread-1) [   x:kbm] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1718090141928521728
+2021-12-03 02:27:21.633 INFO  (searcherExecutor-17-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:27:21.633 INFO  (searcherExecutor-17-thread-1-processing-x:kbm) [   x:kbm] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-03 02:27:21.653 INFO  (searcherExecutor-17-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:27:21.913 INFO  (qtp156856360-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=12
+2021-12-03 02:27:21.925 INFO  (qtp156856360-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=25
+2021-12-03 02:27:22.014 INFO  (qtp156856360-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=73
+2021-12-03 02:27:22.346 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/smamserver/latihan/conf
+2021-12-03 02:27:22.346 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-03 02:27:22.347 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-03 02:27:22.349 INFO  (coreLoadExecutor-13-thread-2) [   x:latihan] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-03 02:27:22.529 INFO  (searcherExecutor-16-thread-1-processing-x:latihan) [   x:latihan] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:27:22.530 INFO  (searcherExecutor-16-thread-1-processing-x:latihan) [   x:latihan] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-03 02:27:22.535 INFO  (searcherExecutor-16-thread-1-processing-x:latihan) [   x:latihan] o.a.s.c.SolrCore [latihan]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:27:26.640 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:26.651 INFO  (qtp156856360-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=4
+2021-12-03 02:27:26.682 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/system params={wt=json&_=1638498446629} status=0 QTime=6
+2021-12-03 02:27:26.682 INFO  (qtp156856360-19) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/replication params={wt=json&command=details&_=1638498446630} status=0 QTime=6
+2021-12-03 02:27:26.686 INFO  (qtp156856360-22) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1638498446629} status=0 QTime=12
+2021-12-03 02:27:26.704 INFO  (qtp156856360-24) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1638498441083&ts=1638498441083} status=503 QTime=1
+2021-12-03 02:27:34.533 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:34.539 INFO  (qtp156856360-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=5
+2021-12-03 02:27:37.423 INFO  (qtp156856360-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:37.429 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=4
+2021-12-03 02:27:37.450 INFO  (qtp156856360-22) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/config params={wt=json&_=1638498457400} status=0 QTime=6
+2021-12-03 02:27:37.451 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638498446629} status=0 QTime=9
+2021-12-03 02:27:37.822 INFO  (qtp156856360-22) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638498446629} status=0 QTime=0
+2021-12-03 02:27:43.569 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:43.579 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1638498463550} status=0 QTime=0
+2021-12-03 02:27:43.581 INFO  (qtp156856360-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=5
+2021-12-03 02:27:43.759 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:43.777 INFO  (qtp156856360-19) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1638498463550} status=0 QTime=0
+2021-12-03 02:27:43.781 INFO  (qtp156856360-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=9
+2021-12-03 02:27:43.799 INFO  (qtp156856360-22) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1638498463550} status=0 QTime=8
+2021-12-03 02:27:43.885 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1638498463550} status=0 QTime=0
+2021-12-03 02:27:57.748 INFO  (qtp156856360-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:27:57.749 INFO  (qtp156856360-19) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/config params={wt=json&_=1638498457400} status=0 QTime=0
+2021-12-03 02:27:57.751 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638498446629} status=0 QTime=1
+2021-12-03 02:27:57.752 INFO  (qtp156856360-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=3
+2021-12-03 02:27:58.044 INFO  (qtp156856360-16) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638498446629} status=0 QTime=0
+2021-12-03 02:28:14.056 INFO  (qtp156856360-41) [   x:kbm] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/yosa/Development/solr/smamserver/kbm/conf/managed-schema
+2021-12-03 02:28:14.093 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.SolrResourceLoader Added 3 libs to classloader, from paths: [/Users/yosa/Development/solr/contrib/dataimporthandler/lib, /Users/yosa/Development/solr/dist]
+2021-12-03 02:28:14.116 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-12-03 02:28:14.117 WARN  (qtp156856360-41) [   x:kbm] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-03 02:28:14.133 INFO  (qtp156856360-41) [   x:kbm] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-03 02:28:14.168 WARN  (qtp156856360-41) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-12-03 02:28:14.169 WARN  (qtp156856360-41) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-12-03 02:28:14.169 WARN  (qtp156856360-41) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-12-03 02:28:14.171 WARN  (qtp156856360-41) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-12-03 02:28:14.171 WARN  (qtp156856360-41) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-12-03 02:28:14.418 INFO  (qtp156856360-41) [   x:kbm] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-03 02:28:14.550 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.CoreContainer Reloading SolrCore 'kbm' using configuration from instancedir /Users/yosa/Development/solr/smamserver/kbm
+2021-12-03 02:28:14.673 INFO  (qtp156856360-41) [   x:kbm] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.kbm' (registry 'solr.core.kbm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:28:14.674 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.SolrCore [[kbm] ] Opening new SolrCore at [/Users/yosa/Development/solr/smamserver/kbm], dataDir=[/Users/yosa/Development/solr/smamserver/kbm/data/]
+2021-12-03 02:28:14.993 WARN  (qtp156856360-41) [   x:kbm] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-12-03 02:28:15.008 INFO  (qtp156856360-41) [   x:kbm] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-03 02:28:15.008 INFO  (qtp156856360-41) [   x:kbm] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-03 02:28:15.023 INFO  (qtp156856360-41) [   x:kbm] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/smamserver/kbm/conf
+2021-12-03 02:28:15.025 INFO  (qtp156856360-41) [   x:kbm] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-03 02:28:15.026 INFO  (qtp156856360-41) [   x:kbm] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-03 02:28:15.028 INFO  (qtp156856360-41) [   x:kbm] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-03 02:28:15.038 INFO  (qtp156856360-41) [   x:kbm] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1718090197932965888
+2021-12-03 02:28:15.045 INFO  (searcherExecutor-27-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:15.045 INFO  (searcherExecutor-27-thread-1-processing-x:kbm) [   x:kbm] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-03 02:28:15.052 INFO  (searcherExecutor-27-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:28:15.081 INFO  (qtp156856360-41) [   x:kbm] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-12-03 02:28:15.086 INFO  (qtp156856360-41) [   ] o.a.s.c.S.Request [kbm]  webapp=/solr path=/schema params={wt=json&_=1638498457400} status=0 QTime=1131
+2021-12-03 02:28:15.087 INFO  (qtp156856360-41) [   ] o.a.s.c.SolrCore [kbm]  CLOSING SolrCore org.apache.solr.core.SolrCore@23da2ffd
+2021-12-03 02:28:15.088 INFO  (qtp156856360-41) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.kbm tag=SolrCore@23da2ffd
+2021-12-03 02:28:15.089 INFO  (qtp156856360-41) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@79204274: rootName = null, domain = solr.core.kbm, service url = null, agent id = null] for registry solr.core.kbm/com.codahale.metrics.MetricRegistry@3a6efc76
+2021-12-03 02:28:15.097 INFO  (searcherExecutor-27-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:15.101 INFO  (searcherExecutor-27-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 11 ms
+2021-12-03 02:28:16.628 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/config params={wt=json&_=1638498457400} status=0 QTime=0
+2021-12-03 02:28:16.633 INFO  (qtp156856360-16) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638498446629} status=0 QTime=7
+2021-12-03 02:28:16.700 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638498446629} status=0 QTime=0
+2021-12-03 02:28:28.975 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/yosa/Development/solr/smamserver/kbm/conf/managed-schema
+2021-12-03 02:28:28.988 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrResourceLoader Added 3 libs to classloader, from paths: [/Users/yosa/Development/solr/contrib/dataimporthandler/lib, /Users/yosa/Development/solr/dist]
+2021-12-03 02:28:29.012 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-12-03 02:28:29.015 WARN  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-03 02:28:29.028 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-03 02:28:29.041 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-12-03 02:28:29.042 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-12-03 02:28:29.042 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-12-03 02:28:29.042 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-12-03 02:28:29.042 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-12-03 02:28:29.143 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-03 02:28:29.261 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.CoreContainer Reloading SolrCore 'kbm' using configuration from instancedir /Users/yosa/Development/solr/smamserver/kbm
+2021-12-03 02:28:29.335 INFO  (qtp156856360-15) [   x:kbm] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.kbm' (registry 'solr.core.kbm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:28:29.335 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrCore [[kbm] ] Opening new SolrCore at [/Users/yosa/Development/solr/smamserver/kbm], dataDir=[/Users/yosa/Development/solr/smamserver/kbm/data/]
+2021-12-03 02:28:29.996 WARN  (qtp156856360-15) [   x:kbm] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-12-03 02:28:30.002 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-03 02:28:30.002 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-03 02:28:30.006 INFO  (qtp156856360-15) [   x:kbm] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/smamserver/kbm/conf
+2021-12-03 02:28:30.006 INFO  (qtp156856360-15) [   x:kbm] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-03 02:28:30.007 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-03 02:28:30.008 INFO  (qtp156856360-15) [   x:kbm] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-03 02:28:30.016 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1718090213638537216
+2021-12-03 02:28:30.022 INFO  (searcherExecutor-32-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:30.022 INFO  (searcherExecutor-32-thread-1-processing-x:kbm) [   x:kbm] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-03 02:28:30.027 INFO  (searcherExecutor-32-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:28:30.046 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-12-03 02:28:30.048 INFO  (qtp156856360-15) [   ] o.a.s.c.S.Request [kbm]  webapp=/solr path=/schema params={wt=json&_=1638498457400} status=0 QTime=1138
+2021-12-03 02:28:30.048 INFO  (searcherExecutor-32-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:30.048 INFO  (qtp156856360-15) [   ] o.a.s.c.SolrCore [kbm]  CLOSING SolrCore org.apache.solr.core.SolrCore@63fcb813
+2021-12-03 02:28:30.049 INFO  (qtp156856360-15) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.kbm tag=SolrCore@63fcb813
+2021-12-03 02:28:30.049 INFO  (qtp156856360-15) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6145852c: rootName = null, domain = solr.core.kbm, service url = null, agent id = null] for registry solr.core.kbm/com.codahale.metrics.MetricRegistry@3a6efc76
+2021-12-03 02:28:30.051 INFO  (searcherExecutor-32-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:28:31.583 INFO  (qtp156856360-16) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/config params={wt=json&_=1638498457400} status=0 QTime=1
+2021-12-03 02:28:31.585 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638498446629} status=0 QTime=2
+2021-12-03 02:28:31.626 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638498446629} status=0 QTime=1
+2021-12-03 02:28:51.778 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /Users/yosa/Development/solr/smamserver/kbm/conf/managed-schema
+2021-12-03 02:28:51.790 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrResourceLoader Added 3 libs to classloader, from paths: [/Users/yosa/Development/solr/contrib/dataimporthandler/lib, /Users/yosa/Development/solr/dist]
+2021-12-03 02:28:51.803 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.10.1
+2021-12-03 02:28:51.803 WARN  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrConfig solrconfig.xml: <jmx> is no longer supported, use solr.xml:/metrics/reporter section instead
+2021-12-03 02:28:51.838 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.IndexSchema Schema name=default-config
+2021-12-03 02:28:51.848 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitNorms to be specified in schema, hardcoded behavior is omitNorms=true
+2021-12-03 02:28:51.848 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitTermFreqAndPositions to be specified in schema, hardcoded behavior is omitTermFreqAndPositions=true
+2021-12-03 02:28:51.849 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termOffsets to be specified in schema, hardcoded behavior is termOffsets=false
+2021-12-03 02:28:51.849 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow termPositions to be specified in schema, hardcoded behavior is termPositions=false
+2021-12-03 02:28:51.850 WARN  (qtp156856360-15) [   x:kbm] o.a.s.s.AbstractSpatialPrefixTreeFieldType FieldType SpatialRecursivePrefixTreeFieldType does not allow omitPositions to be specified in schema, hardcoded behavior is omitPositions=true
+2021-12-03 02:28:51.921 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2021-12-03 02:28:51.956 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.CoreContainer Reloading SolrCore 'kbm' using configuration from instancedir /Users/yosa/Development/solr/smamserver/kbm
+2021-12-03 02:28:51.985 INFO  (qtp156856360-15) [   x:kbm] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.kbm' (registry 'solr.core.kbm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@161479c6
+2021-12-03 02:28:51.985 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.SolrCore [[kbm] ] Opening new SolrCore at [/Users/yosa/Development/solr/smamserver/kbm], dataDir=[/Users/yosa/Development/solr/smamserver/kbm/data/]
+2021-12-03 02:28:52.206 WARN  (qtp156856360-15) [   x:kbm] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-12-03 02:28:52.221 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-12-03 02:28:52.221 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-12-03 02:28:52.225 INFO  (qtp156856360-15) [   x:kbm] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /Users/yosa/Development/solr/smamserver/kbm/conf
+2021-12-03 02:28:52.225 INFO  (qtp156856360-15) [   x:kbm] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-12-03 02:28:52.226 INFO  (qtp156856360-15) [   x:kbm] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxQueryFrequency=0.01,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4}
+2021-12-03 02:28:52.227 INFO  (qtp156856360-15) [   x:kbm] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-12-03 02:28:52.237 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1718090236938944512
+2021-12-03 02:28:52.241 INFO  (searcherExecutor-37-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:52.241 INFO  (searcherExecutor-37-thread-1-processing-x:kbm) [   x:kbm] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-12-03 02:28:52.245 INFO  (searcherExecutor-37-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:28:52.273 INFO  (qtp156856360-15) [   x:kbm] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-12-03 02:28:52.276 INFO  (qtp156856360-15) [   ] o.a.s.c.S.Request [kbm]  webapp=/solr path=/schema params={wt=json&_=1638498457400} status=0 QTime=660
+2021-12-03 02:28:52.276 INFO  (searcherExecutor-37-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-12-03 02:28:52.276 INFO  (qtp156856360-15) [   ] o.a.s.c.SolrCore [kbm]  CLOSING SolrCore org.apache.solr.core.SolrCore@53522c65
+2021-12-03 02:28:52.276 INFO  (qtp156856360-15) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.kbm tag=SolrCore@53522c65
+2021-12-03 02:28:52.276 INFO  (qtp156856360-15) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@548044a0: rootName = null, domain = solr.core.kbm, service url = null, agent id = null] for registry solr.core.kbm/com.codahale.metrics.MetricRegistry@3a6efc76
+2021-12-03 02:28:52.279 INFO  (searcherExecutor-37-thread-1-processing-x:kbm) [   x:kbm] o.a.s.c.SolrCore [kbm]  Registered new searcher autowarm time: 0 ms
+2021-12-03 02:28:53.802 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/config params={wt=json&_=1638498457400} status=0 QTime=0
+2021-12-03 02:28:53.803 INFO  (qtp156856360-41) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1638498446629} status=0 QTime=3
+2021-12-03 02:28:53.867 INFO  (qtp156856360-16) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1638498446629} status=0 QTime=0
+2021-12-03 02:32:16.496 INFO  (qtp156856360-16) [   x:kbm] o.a.s.u.p.LogUpdateProcessorFactory [kbm]  webapp=/solr path=/update/json params={commit=true}{} 0 39
+2021-12-03 02:32:16.500 ERROR (qtp156856360-16) [   x:kbm] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown key 'doc' at [16]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteMap(JsonLoader.java:401)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteCommand(JsonLoader.java:330)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:206)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:156)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-12-03 02:32:21.487 INFO  (qtp156856360-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:32:21.492 INFO  (qtp156856360-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=3
+2021-12-03 02:32:23.185 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498454494} hits=0 status=0 QTime=77
+2021-12-03 02:32:23.260 INFO  (qtp156856360-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498441082} status=0 QTime=0
+2021-12-03 02:32:23.268 INFO  (qtp156856360-41) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498441083} status=0 QTime=6
+2021-12-03 02:32:23.275 INFO  (qtp156856360-15) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498454494} hits=0 status=0 QTime=3
+2021-12-03 02:32:33.249 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498454494} hits=0 status=0 QTime=0
+2021-12-03 02:33:03.103 INFO  (qtp156856360-16) [   x:kbm] o.a.s.u.p.LogUpdateProcessorFactory [kbm]  webapp=/solr path=/update/json params={commit=true}{} 0 1
+2021-12-03 02:33:03.103 ERROR (qtp156856360-16) [   x:kbm] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: Unknown key 'doc' at [16]
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteMap(JsonLoader.java:401)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.handleDeleteCommand(JsonLoader.java:330)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.processUpdate(JsonLoader.java:206)
+	at org.apache.solr.handler.loader.JsonLoader$SingleThreadedJsonLoader.load(JsonLoader.java:156)
+	at org.apache.solr.handler.loader.JsonLoader.load(JsonLoader.java:84)
+	at org.apache.solr.handler.UpdateRequestHandler$1.load(UpdateRequestHandler.java:97)
+	at org.apache.solr.handler.ContentStreamHandlerBase.handleRequestBody(ContentStreamHandlerBase.java:82)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:216)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2637)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:794)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:567)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:427)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:357)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:201)
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1601)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:548)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:600)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:763)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:400)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:645)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:392)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:338)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:315)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:173)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:131)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:409)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:883)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1034)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-12-03 02:33:08.722 INFO  (qtp156856360-18) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498454494} hits=0 status=0 QTime=0
+2021-12-03 02:33:14.914 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498454494} hits=0 status=0 QTime=0
+2021-12-03 02:33:56.441 INFO  (qtp156856360-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1638498836087} status=0 QTime=0
+2021-12-03 02:33:56.461 INFO  (qtp156856360-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1638498836088} status=0 QTime=9
+2021-12-03 02:33:56.492 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498836251} hits=0 status=0 QTime=0
+2021-12-03 02:33:58.579 INFO  (qtp156856360-18) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498836251} hits=0 status=0 QTime=0
+2021-12-03 02:33:59.223 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498836251} hits=0 status=0 QTime=0
+2021-12-03 02:33:59.970 INFO  (qtp156856360-18) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR&_=1638498836251} hits=0 status=0 QTime=0
+2021-12-03 02:34:05.788 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR} hits=0 status=0 QTime=0
+2021-12-03 02:34:09.023 INFO  (qtp156856360-23) [   x:kbm] o.a.s.c.S.Request [kbm]  webapp=/solr path=/select params={q=*:*&indent=true&q.op=OR} hits=0 status=0 QTime=0
+2021-12-03 02:36:52.868 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@7e5afaa6{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:6565}
+2021-12-03 02:36:52.869 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-12-03 02:36:52.877 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=628064884
+2021-12-03 02:36:52.886 INFO  (coreCloseExecutor-42-thread-1) [   ] o.a.s.c.SolrCore [kbm]  CLOSING SolrCore org.apache.solr.core.SolrCore@4597a7fc
+2021-12-03 02:36:52.887 INFO  (coreCloseExecutor-42-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.kbm tag=SolrCore@4597a7fc
+2021-12-03 02:36:52.887 INFO  (coreCloseExecutor-42-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4c4f56f: rootName = null, domain = solr.core.kbm, service url = null, agent id = null] for registry solr.core.kbm/com.codahale.metrics.MetricRegistry@3a6efc76
+2021-12-03 02:36:52.897 INFO  (coreCloseExecutor-42-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-12-03 02:36:52.900 INFO  (coreCloseExecutor-42-thread-2) [   ] o.a.s.c.SolrCore [latihan]  CLOSING SolrCore org.apache.solr.core.SolrCore@525d52b
+2021-12-03 02:36:52.900 INFO  (coreCloseExecutor-42-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.latihan tag=SolrCore@525d52b
+2021-12-03 02:36:52.901 INFO  (coreCloseExecutor-42-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@32ccb8fd: rootName = null, domain = solr.core.latihan, service url = null, agent id = null] for registry solr.core.latihan/com.codahale.metrics.MetricRegistry@19451ca8
+2021-12-03 02:36:52.911 INFO  (coreCloseExecutor-42-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-12-03 02:36:53.687 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-12-03 02:36:53.687 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@6ad6fa53: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@7d13b9b3
+2021-12-03 02:36:53.690 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-12-03 02:36:53.690 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@66bfd864: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@29a8c489
+2021-12-03 02:36:53.691 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-12-03 02:36:53.692 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4aac85fa: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@2d1ef738
+2021-12-03 02:36:53.728 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@4b013c76{/solr,null,STOPPED}{/Users/yosa/Development/solr/server/solr-webapp/webapp}

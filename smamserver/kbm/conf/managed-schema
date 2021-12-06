@@ -453,6 +453,7 @@
   <field name="_version_" type="plong" indexed="false" stored="false"/>
   <field name="content" type="text_general" uninvertible="true" multiValued="false" indexed="true" stored="true"/>
   <field name="id" type="string" multiValued="false" indexed="true" required="true" stored="true"/>
+  <field name="slug" type="text_general" uninvertible="true" multiValued="false" indexed="true" stored="true"/>
   <field name="title" type="text_general" uninvertible="true" multiValued="false" indexed="true" stored="true"/>
   <field name="visibility" type="text_general" uninvertible="true" multiValued="false" indexed="true" stored="true"/>
   <dynamicField name="*_txt_en_split_tight" type="text_en_splitting_tight" indexed="true" stored="true"/>

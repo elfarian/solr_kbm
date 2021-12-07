@@ -1,13 +1,13 @@
 Java HotSpot(TM) 64-Bit Server VM warning: -XX:+UseLargePages is disabled in this release.
-2021-12-03 12:01:43.718 INFO  (main) [   ] o.e.j.u.log Logging initialized @6502ms to org.eclipse.jetty.util.log.Slf4jLog
-2021-12-03 12:01:44.523 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_281-b09
-2021-12-03 12:01:44.574 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yosa/Development/solr/server/contexts/] at interval 0
-2021-12-03 12:01:45.891 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-2021-12-03 12:01:45.916 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
-2021-12-03 12:01:45.917 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
-2021-12-03 12:01:45.921 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
-2021-12-03 12:01:46.315 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
-2021-12-03 12:01:46.450 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
-2021-12-03 12:01:46.450 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 6565
-2021-12-03 12:01:46.450 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yosa/development/solr
-2021-12-03 12:01:46.451 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-03T12:01:46.451Z
+2021-12-07 01:34:26.776 INFO  (main) [   ] o.e.j.u.log Logging initialized @6399ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-12-07 01:34:27.760 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.44.v20210927; built: 2021-09-27T23:02:44.612Z; git: 8da83308eeca865e495e53ef315a249d63ba9332; jvm 1.8.0_281-b09
+2021-12-07 01:34:27.785 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///Users/yosa/Development/solr/server/contexts/] at interval 0
+2021-12-07 01:34:29.198 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-12-07 01:34:29.222 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-12-07 01:34:29.222 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-12-07 01:34:29.226 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-12-07 01:34:29.601 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-12-07 01:34:29.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.10.1
+2021-12-07 01:34:29.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 6565
+2021-12-07 01:34:29.612 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /Users/yosa/Development/solr
+2021-12-07 01:34:29.613 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-12-07T01:34:29.613Z
